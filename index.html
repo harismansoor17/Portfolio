@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Haris Mansoor</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         * {
             margin: 0;
@@ -25,6 +26,27 @@
         img {
             height: 100%;
             width: 100%;
+        }
+
+        .bg-blue{
+            background-color: #3c99f0;
+        }
+
+        .bg-black{
+            background-color: #222222;
+        }
+        .bg-white{
+            background-color: #ffffff;
+        }
+
+        .blue {
+            color: #3c99f0 !important;
+        }
+        .black{
+            color: #222222;
+        }
+        .white{
+            color: #ffffff;
         }
 
         nav {
@@ -51,6 +73,13 @@
             border-radius: 100px;
             cursor: pointer;
         }
+        nav ul li a{
+            text-decoration: none;
+            color: #222222;
+        }
+        nav ul li a:hover{
+            color: #ffffff;
+        }
 
         nav ul li:hover {
             color: #ffffff;
@@ -59,17 +88,16 @@
             transition: 0.3s ease-in-out;
         }
 
-        nav ul :nth-child(2),
-        nav ul :nth-child(4) {
-            color: #3c99f0;
+        nav ul :nth-child(2) {
+            color: #3c99f0 !important;
             border-bottom: 1px solid #3c99f0;
         }
 
-        nav ul :nth-child(2):hover,
-        nav ul :nth-child(4):hover {
+        nav ul :nth-child(2):hover {
             background-color: #3c99f0;
-            color: #ffffff;
+            color: #ffffff !important;
         }
+        
 
         .left {
             font-size: 40px;
@@ -85,37 +113,33 @@
             color: #222222;
         }
 
-        .leftSection {
+        .topSection {
             text-align: center;
 
         }
 
-        .leftSection span {
+        .topSection span {
             font-size: 75px;
             font-weight: 700;
             color: #222222;
         }
 
-        .leftSection p {
+        .topSection p {
             line-height: 51px;
             width: 100vw;
             font-size: 2.5rem;
             color: #222222;
         }
 
-        .rightSection {
+        .bottomSection {
             height: 100%;
             width: 20%;
             margin-top: 30px;
 
         }
 
-        .rightSection img {
+        .bottomSection img {
             border-radius: 50%;
-        }
-
-        .blue {
-            color: #3c99f0 !important;
         }
 
         #element {
@@ -143,7 +167,8 @@
             flex-direction: column;
         }
 
-        .fend {
+        #fend {
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -172,14 +197,15 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            flex-direction: row;
             margin: 20px;
-            border-top: 1px solid #222222;
         }
 
         .logo {
             font-size: 3rem;
             width: 10%;
             font-weight: 700;
+            margin-right: auto;
         }
 
         .links {
@@ -249,6 +275,76 @@
             padding-top: 12px;
             border-top: 1px solid #222222;
         }
+        @media (max-width: 1023px) { 
+
+            .topSection span{
+                font-size: 3rem;
+            }
+            .topSection p{
+                font-size: 1.3rem;
+                line-height: 2rem;
+            }
+            #element{
+                font-size: 3rem;
+            }
+
+            .secondSection{
+                height: 300px;
+            }
+            .about{
+                font-size: 1rem;
+                
+            }
+
+        footer{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .logo{
+            font-size: 4rem;
+            margin-left: auto;
+            width: 50%;
+        }
+        .links{
+            margin-right: 0%;
+            margin: 30px;  
+            padding: 22px;
+            border-top: 2px solid;        
+            border-bottom: 2px solid;        
+        }
+
+        @media (max-width: 639px) {
+            nav{
+                flex-direction: column;
+                height: 40vh;
+            }
+
+            .bottomSection{
+                width: 40%;
+            }
+            .links{
+                margin: 0;
+            }
+            
+            .links ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+            }
+            .socialLinks{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+            }
+        }
+            
+
+        }
     </style>
 </head>
 
@@ -258,10 +354,9 @@
             <div class="left"><span>Haris Mansoor</span></div>
             <div class="right">
                 <ul>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Know Me</li>
-                    <li>Contact Me</li>
+                    <li><a href="#fend">Services</a></li>
+                    <li><a href="https://github.com/harismansoor17">Projects</a></li>
+                    <li><a href="#form-details">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -269,13 +364,13 @@
 
     <main>
         <section class="firstSection">
-            <div class="leftSection">
+            <div class="topSection">
                 <span>YO! I'm <span class="blue">Haris</span> ; )</span>
                 <p>A budding front-end developer passionate about creating sleek, responsive web experiences.
                 </p>
                 <span id="element"></span>
             </div>
-            <div class="rightSection">
+            <div class="bottomSection">
                 <img src="img/Profile.jpeg" alt="">
             </div>
         </section>
@@ -291,7 +386,7 @@
         </section>
 
         <section class="thirdSection">
-            <div class="fend">
+            <div id="fend">
                 <div class="wrapper">
                     <i class="fa-solid fa-pen-ruler"></i>
                 </div>
@@ -302,7 +397,7 @@
                     <br>
                     <br>
                     <h3 class="blue">Languages</h3>
-                    <span>HTML,CSS,JS</span>
+                    <span>HTML,CSS,JS,Git</span>
                     <br>
                     <br>
                     <h3 class="blue">Tools</h3>
@@ -318,6 +413,22 @@
 
         </section>
     </main>
+
+
+    
+    <section class="bg-black white" id="form-details">
+        <form action="">
+            <span>Reach Out</span>
+            <h2 class="blue">Don't be shy!</h2>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Subject">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message.."></textarea>
+            <button>Submit</button>
+        </form>
+
+
+    </section>
 
 
     <footer>

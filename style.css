@@ -1,0 +1,43 @@
+#form-details{
+    padding: 2.5rem;
+}
+#form-details form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form span{
+    font-size: 1.2rem;
+}
+#form-details form h2{
+    font-size: 2.3rem;
+    line-height: 30px;
+    padding: 20px 0;
+}
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid #3c99f0;
+    border-left: 4px solid #3c99f0;
+    resize: none;
+}
+#form-details form button{
+    padding: 0.8rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 24px;
+}
+#form-details form button:hover{
+    color: #ffffff;
+    background-color: #3c99f0;
+    transition: ease-in-out;
+    transition-duration:300ms;
+    transition-delay: 150ms;
+    scale: 1.2;
+}
