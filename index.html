@@ -17,10 +17,10 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="flex item-center bg-white">
             <div class="left"><span>Haris Mansoor</span></div>
             <div class="right">
-                <ul>
+                <ul class="flex justify-center">
                     <li><a href="#fend">Services</a></li>
                     <li><a href="https://github.com/harismansoor17">Projects</a></li>
                     <li><a href="#form-details">Contact Me</a></li>
@@ -30,19 +30,19 @@
     </header>
 
     <main>
-        <section class="firstSection">
+        <section class="firstSection black flex justify-center item-center flex-col">
             <div class="topSection">
-                <span>YO! I'm <span class="blue">Haris</span> ; )</span>
-                <p>A budding front-end developer passionate about creating sleek, responsive web experiences.
+                <span class="black">YO! I'm <span class="blue">Haris</span> ; )</span>
+                <p class="black">A budding front-end developer passionate about creating sleek, responsive web experiences.
                 </p>
-                <span id="element"></span>
+                <span class="blue" id="element"></span>
             </div>
             <div class="bottomSection">
                 <img src="img/Profile.jpeg" alt="">
             </div>
         </section>
 
-        <section class="secondSection">
+        <section class="secondSection bg-black white flex item-center justify-center">
             <div class="about">
                 <span> I'm, a passionate beginner front-end developer with a keen eye for design and a love for coding.
                     My journey into web development began with a fascination for how websites are built and a desire to
@@ -52,8 +52,8 @@
             </div>
         </section>
 
-        <section class="thirdSection">
-            <div id="fend">
+        <section class="thirdSection flex flex-col">
+            <div id="fend " class="flex item-center justify-center flex-col">
                 <div class="wrapper">
                     <i class="fa-solid fa-pen-ruler"></i>
                 </div>
@@ -84,7 +84,7 @@
 
     
     <section class="bg-black white" id="form-details">
-        <form action="">
+        <form class="flex flex-col " action="">
             <span>Reach Out</span>
             <h2 class="blue">Don't be shy!</h2>
             <input type="text" placeholder="Name">
@@ -98,18 +98,18 @@
     </section>
 
 
-    <footer>
+    <footer class="flex item-center">
         <div class="logo blue">Haris_</div>
         <div class="links">
             <span>links</span>
-            <ul>
+            <ul class="flex item-center justify-center">
                 <li>Services</li>
                 <li>Projects</li>
                 <li>Know Me</li>
                 <li>Contact Me</li>
             </ul>
         </div>
-        <div class="social">
+        <div class="social flex item-center flex-col">
             <span>Social Links</span>
             <div class="socialLinks">
                 <a href=""><i class="fa-brands fa-github"></i></a>
@@ -120,7 +120,7 @@
 
         </div>
 
-        <div class="copy">
+        <div class="copy flex justify-center item-center">
             Rights Reserved by ME @ 2024 &copy
         </div>
     </footer>
