@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Haris Mansoor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            font-family: "Poppins", sans-serif;
+            color: #222222;
+            overflow-x: hidden;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 90px;
+            background-color: #ffffff;
+            border-bottom: 2px solid #222222;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            text-decoration: none;
+            font-size: 16px;
+            list-style: none;
+            margin: 0px 10px;
+            border-bottom: 1px solid;
+            padding: 5px 4px;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            color: #ffffff;
+            background-color: #222222;
+            border: none;
+            transition: 0.3s ease-in-out;
+        }
+
+        nav ul :nth-child(2),
+        nav ul :nth-child(4) {
+            color: #3c99f0;
+            border-bottom: 1px solid #3c99f0;
+        }
+
+        nav ul :nth-child(2):hover,
+        nav ul :nth-child(4):hover {
+            background-color: #3c99f0;
+            color: #ffffff;
+        }
+
+        .left {
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 24px 20px;
+            color: #222222;
+        }
+
+        .leftSection {
+            text-align: center;
+
+        }
+
+        .leftSection span {
+            font-size: 75px;
+            font-weight: 700;
+            color: #222222;
+        }
+
+        .leftSection p {
+            line-height: 51px;
+            width: 100vw;
+            font-size: 2.5rem;
+            color: #222222;
+        }
+
+        .rightSection {
+            height: 100%;
+            width: 20%;
+            margin-top: 30px;
+
+        }
+
+        .rightSection img {
+            border-radius: 50%;
+        }
+
+        .blue {
+            color: #3c99f0 !important;
+        }
+
+        #element {
+            font-size: 75px;
+            color: #3c99f0;
+        }
+
+        .secondSection {
+            background-color: #222222;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 500px;
+        }
+
+        .about {
+            font-size: 1.5rem;
+            width: 80%;
+        }
+
+        .thirdSection {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fend {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 22px;
+        }
+
+        .wrapper {
+            font-size: 4rem;
+            padding: 2px 20px;
+            border: 4px solid #222222;
+            border-radius: 50%;
+        }
+
+        .thirdSection h2{
+            font-size: 2rem;
+        }
+        .thirdSection span{
+            font-size: 1.3rem;
+            margin: 8px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px;
+            border-top: 1px solid #222222;
+        }
+
+        .logo {
+            font-size: 3rem;
+            width: 10%;
+            font-weight: 700;
+        }
+
+        .links {
+            margin: 30px;
+            margin-right: auto;
+        }
+
+        .links span {
+            font-size: 22px;
+            margin-bottom: 22px;
+            font-weight: 700;
+        }
+
+        .links ul {
+            display: flex;
+        }
+
+        .links ul li {
+            list-style: none;
+            cursor: pointer;
+            padding: 0px 8px;
+            font-size: 1.2rem;
+        }
+
+        .links ul li:hover {
+            color: #3c99f0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .social span {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .socialLinks a {
+            margin: 12px;
+            font-size: 30px;
+            text-decoration: none;
+            color: #222222;
+            padding: 3px 10px;
+            border: 3px solid #222222;
+            border-radius: 50%;
+        }
+
+        .socialLinks a:hover {
+            color: #ffffff;
+            background-color: #3c99f0;
+            transition: 0.2s ease-in-out;
+        }
+
+        .copy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding-top: 12px;
+            border-top: 1px solid #222222;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><span>Haris Mansoor</span></div>
+            <div class="right">
+                <ul>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Know Me</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <span>YO! I'm <span class="blue">Haris</span> ; )</span>
+                <p>A budding front-end developer passionate about creating sleek, responsive web experiences.
+                </p>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="img/Profile.jpeg" alt="">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <div class="about">
+                <span> I'm, a passionate beginner front-end developer with a keen eye for design and a love for coding.
+                    My journey into web development began with a fascination for how websites are built and a desire to
+                    create visually stunning and user-friendly web experiences. Armed with skills in HTML, CSS, and
+                    JavaScript.Welcome to my portfolio, where you can see my projects and follow my journey in web
+                    development. Let's create something awesome together!</span>
+            </div>
+        </section>
+
+        <section class="thirdSection">
+            <div class="fend">
+                <div class="wrapper">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <br>
+                <h2 class="blue">Front-End</h2>
+                <span>I create engaging websites with beautiful designs, ensuring they are user-friendly and perform
+                    seamlessly on all devices.</span>
+                    <br>
+                    <br>
+                    <h3 class="blue">Languages</h3>
+                    <span>HTML,CSS,JS</span>
+                    <br>
+                    <br>
+                    <h3 class="blue">Tools</h3>
+
+                    <span>Vscode</span>
+                    <span>Boot Strap</span>
+                    <span>Tailwind</span>
+                    <span>Wordpress</span>
+                    <span>Elementor</span>
+                    <span>WooCommerence</span>
+                    <span>Github</span>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="logo blue">Haris_</div>
+        <div class="links">
+            <span>links</span>
+            <ul>
+                <li>Services</li>
+                <li>Projects</li>
+                <li>Know Me</li>
+                <li>Contact Me</li>
+            </ul>
+        </div>
+        <div class="social">
+            <span>Social Links</span>
+            <div class="socialLinks">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+
+        </div>
+
+        <div class="copy">
+            Rights Reserved by ME @ 2024 &copy
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer', 'WordPress', 'Front-End Developer'],
+            typeSpeed: 25,
+        });
+    </script>
+</body>
+
+</html>
