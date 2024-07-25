@@ -1,137 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>Haris Mansoor</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body class="bg-white black">
     <header>
-        <nav class="flex item-center bg-white">
-            <div class="left"><span>Haris Mansoor</span></div>
-            <div class="right">
-                <ul class="flex justify-center">
-                    <li><a href="#fend">Services</a></li>
-                    <li><a href="https://github.com/harismansoor17">Projects</a></li>
-                    <li><a href="#form-details">Contact Me</a></li>
-                </ul>
+      <nav class="flex item-center">
+        <div class="left"><span>Haris Mansoor</span></div>
+
+        <div class="off-screen">
+          <div id="close">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+          <ul>
+            <li><a href="#f-end" >Services</a></li>
+            <li><a href="https://github.com/harismansoor17" target="_blank">My Projects</a></li>
+            <li><a href="#form-details" >Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="right">
+          <ul class="flex justify-center list">          
+              <li><a href="#f-end" >Services</a></li>
+              <li><a href="https://github.com/harismansoor17" target="_blank">My Projects</a></li>
+              <li><a href="#form-details" >Contact Me</a></li>
+            </ul>
+            <div class="mobile hidden">
+              <i class="fa-solid fa-bars"></i>
             </div>
-        </nav>
+            
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="firstSection black flex justify-center item-center flex-col">
-            <div class="topSection">
-                <span class="black">YO! I'm <span class="blue">Haris</span> ; )</span>
-                <p class="black">A budding front-end developer passionate about creating sleek, responsive web experiences.
-                </p>
-                <span class="blue" id="element"></span>
-            </div>
-            <div class="bottomSection">
-                <img src="img/Profile.jpeg" alt="">
-            </div>
-        </section>
+      <section
+        class="firstSection black flex justify-center item-center flex-col"
+      >
+        <div class="topSection">
+          <span class="black">YO! I'm <span class="blue">Haris</span> ; )</span>
+          <p class="black">
+            A budding front-end developer passionate about creating sleek,
+            responsive web experiences.
+          </p>
+          <span class="blue" id="element"></span>
+        </div>
+        <div class="bottomSection">
+          <img src="img/Profile.jpeg" alt="" />
+        </div>
+      </section>
 
-        <section class="secondSection bg-black white flex item-center justify-center">
-            <div class="about">
-                <span> I'm, a passionate beginner front-end developer with a keen eye for design and a love for coding.
-                    My journey into web development began with a fascination for how websites are built and a desire to
-                    create visually stunning and user-friendly web experiences. Armed with skills in HTML, CSS, and
-                    JavaScript.Welcome to my portfolio, where you can see my projects and follow my journey in web
-                    development. Let's create something awesome together!</span>
-            </div>
-        </section>
+      <section
+        class="secondSection bg-blue white flex item-center justify-center"
+      >
+        <div class="about">
+          <span>
+            I'm, a passionate beginner front-end developer with a keen eye for
+            design and a love for coding. My journey into web development began
+            with a fascination for how websites are built and a desire to create
+            visually stunning and user-friendly web experiences. Armed with
+            skills in HTML, CSS, and JavaScript.Welcome to my portfolio, where
+            you can see my projects and follow my journey in web development.
+            Let's create something awesome together!</span
+          >
+        </div>
+      </section>
 
-        <section class="thirdSection flex flex-col">
-            <div id="fend " class="flex item-center justify-center flex-col">
-                <div class="wrapper">
-                    <i class="fa-solid fa-pen-ruler"></i>
-                </div>
-                <br>
-                <h2 class="blue">Front-End</h2>
-                <span>I create engaging websites with beautiful designs, ensuring they are user-friendly and perform
-                    seamlessly on all devices.</span>
-                    <br>
-                    <br>
-                    <h3 class="blue">Languages</h3>
-                    <span>HTML,CSS,JS,Git</span>
-                    <br>
-                    <br>
-                    <h3 class="blue">Tools</h3>
+      <div
+        class="spacer"
+        style="margin-top: -10px; background-image: url('/img/layer1.svg')"
+      ></div>
 
-                    <span>Vscode</span>
-                    <span>Boot Strap</span>
-                    <span>Tailwind</span>
-                    <span>Wordpress</span>
-                    <span>Elementor</span>
-                    <span>WooCommerence</span>
-                    <span>Github</span>
-            </div>
+      <section id="f-end" class="thirdSection flex flex-col item-center">
+        <div class="flex item-center justify-center flex-col">
+          <div class="wrapper">
+            <i class="fa-solid fa-pen-ruler"></i>
+          </div>
+          <br />
+          <h2 class="blue">Front-End</h2>
+          <span
+            >I create engaging websites with beautiful designs, ensuring they
+            are user-friendly and perform seamlessly on all devices.</span
+          >
+          <br />
+          <br />
+          <h3 class="blue">Languages</h3>
+          <span>HTML,CSS,JS,Git</span>
+          <br />
+          <br />
+          <h3 class="blue">Tools</h3>
 
-        </section>
+          <span>Vscode</span>
+          <span>Boot Strap</span>
+          <span>Tailwind</span>
+          <span>Wordpress</span>
+          <span>Elementor</span>
+          <span>WooCommerence</span>
+          <span>Github</span>
+        </div>
+      </section>
     </main>
 
-
-    
     <section class="bg-black white" id="form-details">
-        <form class="flex flex-col " action="">
-            <span>Reach Out</span>
-            <h2 class="blue">Don't be shy!</h2>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message.."></textarea>
-            <button>Submit</button>
-        </form>
-
-
+      <form class="flex flex-col" action="">
+        <span>Reach Out</span>
+        <h2 class="blue">Don't be shy!</h2>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="E-mail" />
+        <input type="text" placeholder="Subject" />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Message.."
+        ></textarea>
+        <button class="bg-blue white">Submit</button>
+      </form>
     </section>
-
+    <div
+      class="spacer"
+      style="margin-top: -10px; background-image: url(/img/layer2.svg)"
+    ></div>
 
     <footer class="flex item-center">
-        <div class="logo blue">Haris_</div>
-        <div class="links">
-            <span>links</span>
-            <ul class="flex item-center justify-center">
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Know Me</li>
-                <li>Contact Me</li>
-            </ul>
+      <div class="logo blue">Haris_</div>
+      <div class="links">
+        <span>links</span>
+        <ul class="flex item-center justify-center">
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Know Me</li>
+          <li>Contact Me</li>
+        </ul>
+      </div>
+      <div class="social flex item-center flex-col">
+        <span>Social Links</span>
+        <div class="socialLinks">
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href=""><i class="fa-regular fa-envelope"></i></a>
         </div>
-        <div class="social flex item-center flex-col">
-            <span>Social Links</span>
-            <div class="socialLinks">
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-regular fa-envelope"></i></a>
-            </div>
+      </div>
 
-        </div>
-
-        <div class="copy flex justify-center item-center">
-            Rights Reserved by ME @ 2024 &copy
-        </div>
+      <div class="copy flex justify-center item-center">
+        Rights Reserved by ME @ 2024 &copy
+      </div>
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Designer', 'WordPress', 'Front-End Developer'],
-            typeSpeed: 25,
-        });
-    </script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

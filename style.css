@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #ffffff;
     font-family: "Poppins", sans-serif;
-    color: #222222;
     overflow-x: hidden;
 }
 
@@ -64,42 +63,80 @@ nav {
     justify-content: space-around;
     height: 90px;
     border-bottom: 2px solid #222222;
+    position: relative;
 }
 
-nav ul li {
-    text-decoration: none;
-    font-size: 16px;
-    list-style: none;
-    margin: 0px 10px;
-    border-bottom: 1px solid;
-    padding: 5px 4px;
-    border-radius: 100px;
+.mobile i{
+    margin: 32px; 
+    font-size: 2rem;
+    position: absolute;
+    right: 0;  
+    top: 0; 
     cursor: pointer;
 }
 
-nav ul li a {
+.off-screen{
+    position: fixed;
+    background-color: #ffffff;
+    right: -500px;
+    transition: right 300ms ease-in 150ms;
+    top: 0;
+    height: 100vh;
+    padding-right: 100px; 
+    border-left: 1px solid #222222;   
+    z-index: 1;
+}
+.hidden{
+    display: none;
+}
+
+#close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 12px 22px;
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+
+nav ul {
+    font-size: 18px;
+}
+
+.right ul li, .off-screen li {
+    margin: 0px 10px;
+    list-style: none;
+    cursor: pointer;
+    
+    
+}
+
+.off-screen li{
+    margin: 42px;
+}
+
+.right a,.off-screen a {
+    border-radius: 100px;
+    border-bottom: 1px solid #222222;
+    color: #222222 ;
     text-decoration: none;
-    color: #222222;
+    padding: 12px ;
 }
 
-nav ul li a:hover {
-    color: #ffffff;
-}
-
-nav ul li:hover {
+.right li :hover, .off-screen li :hover {
     color: #ffffff;
     background-color: #222222;
-    border: none;
-    transition: 0.3s ease-in-out;
+    border-bottom: none;
+    transition: 300ms ease-in-out 150ms;
 }
 
-nav ul :nth-child(2) {
+.right ul  :nth-child(2) a, .off-screen ul :nth-child(2) a{
     color: #3c99f0 !important;
     border-bottom: 1px solid #3c99f0;
 }
 
-nav ul :nth-child(2):hover {
-    background-color: #3c99f0;
+.right ul :nth-child(2) a:hover,.off-screen ul :nth-child(2) a:hover {
+    background-color: #3c99f0 !important;
     color: #ffffff !important;
 }
 
@@ -108,6 +145,7 @@ nav ul :nth-child(2):hover {
     font-size: 40px;
     cursor: pointer;
 }
+
 
 .firstSection {
     margin: 24px 20px;
@@ -155,9 +193,10 @@ nav ul :nth-child(2):hover {
 
 .thirdSection {
     margin: 22px;
+    height: 100vh;
 }
 
-#fend {
+#f-end {
     padding: 22px;
 }
 
@@ -210,19 +249,16 @@ nav ul :nth-child(2):hover {
 }
 
 #form-details form button {
-    padding: 0.8rem;
+    padding: 10px 6px;
     border: none;
     font-size: 1rem;
     font-weight: 700;
     border-radius: 24px;
+    cursor: pointer;
 }
 
 #form-details form button:hover {
-    color: #ffffff;
-    background-color: #3c99f0;
-    transition: ease-in-out;
-    transition-duration: 300ms;
-    transition-delay: 150ms;
+    transition: 300ms ease-in-out 150ms;
     scale: 1.2;
 }
 
@@ -230,10 +266,11 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 20px;
+    margin-top: 0px;
 }
 
 .logo {
-    font-size: 3rem;
+    font-size:3rem;
     width: 10%;
     font-weight: 700;
     margin-right: auto;
@@ -259,7 +296,7 @@ footer {
 
 .links ul li:hover {
     color: #3c99f0;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out 0.1s;
 }
 
 .social {
@@ -297,17 +334,28 @@ footer {
     border-top: 1px solid #222222;
 }
 
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 @media (max-width: 1023px) {
 
     .topSection span {
         font-size: 3rem;
     }
-
+    
     .topSection p {
         font-size: 1.3rem;
         line-height: 2rem;
     }
-
+    
+    .bottomSection {
+        width: 40%;
+    }
     #element {
         font-size: 3rem;
     }
@@ -353,19 +401,68 @@ footer {
         flex-direction: column;
 
     }
+}
 
-    @media (max-width: 639px) {
-        nav {
-            flex-direction: column;
-            height: 40vh;
+    @media (max-width: 700px) {
+
+        .list{
+            display: none;
+        }
+
+        .mobile{
+            display: block;
         }
 
         .bottomSection {
             width: 40%;
         }
 
+        .about{
+            font-size: 18px;
+        }
+        
+        .thirdSection{
+            height: 100vh;
+            margin: 60px 22px;
+        }
+        
+        #form-details form{
+            width: 100%;
+        }
+
         .logo{
             font-size: 3rem;
         }
     }
-}
+
+    @media (max-width: 536px){
+
+        .left{
+            font-size: 1.8rem;
+            position: absolute;
+            left: 0;
+            margin: 12px;
+        }
+        .topSection span{
+            font-size: 2.3rem;
+        }
+
+        .topSection p{
+            font-size: 1.3rem;
+        }
+
+        #element{
+            font-size: 2rem;
+        }
+
+        .secondSection{
+            font-size: 12px;
+            height: 70vh;
+        }
+
+        .thirdSection{
+            margin: 120px 22px;
+        }
+
+
+    }
