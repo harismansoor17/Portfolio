@@ -1,468 +1,465 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 /* ShortCLasses */
 
 .bg-blue {
-    background-color: #3c99f0;
+  background-color: #3c99f0;
 }
 
 .bg-black {
-    background-color: #222222;
+  background-color: #222222;
 }
 
 .bg-white {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .blue {
-    color: #3c99f0 !important;
+  color: #3c99f0 !important;
 }
 
 .black {
-    color: #222222;
+  color: #222222;
 }
 
 .white {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .item-center {
-    align-items: center;
+  align-items: center;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .flex-col {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 /*  */
 
-
 nav {
-    justify-content: space-around;
-    height: 90px;
-    border-bottom: 2px solid #222222;
-    position: relative;
+  justify-content: space-around;
+  height: 90px;
+  border-bottom: 2px solid #222222;
+  position: relative;
 }
 
-.mobile i{
-    margin: 32px; 
-    font-size: 2rem;
-    position: absolute;
-    right: 0;  
-    top: 0; 
-    cursor: pointer;
+.mobile i {
+  margin: 32px;
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #3c99f0;
+  cursor: pointer;
 }
 
-.off-screen{
-    position: fixed;
-    background-color: #ffffff;
-    right: -500px;
-    transition: right 300ms ease-in 150ms;
-    top: 0;
-    height: 100vh;
-    padding-right: 100px; 
-    border-left: 1px solid #222222;   
-    z-index: 1;
-}
-.hidden{
-    display: none;
+.off-screen {
+  position: fixed;
+  background-color: #ffffff;
+  right: -500px;
+  transition: right 300ms ease-in 150ms;
+  top: 0;
+  height: 60vh;
+  border-left: 1px solid #3c99f0;
+  border-bottom: 1px solid #3c99f0;
+  z-index: 1;
 }
 
-#close{
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 12px 22px;
-    font-size: 2.3rem;
-    cursor: pointer;
+.hidden {
+  display: none;
+}
+
+#close {
+  position: absolute;
+  color: #3c99f0;
+  right: 0;
+  top: 0;
+  margin: 12px 22px;
+  font-size: 2.3rem;
+  cursor: pointer;
 }
 
 nav ul {
-    font-size: 18px;
+  font-size: 18px;
 }
 
-.right ul li, .off-screen li {
-    margin: 0px 10px;
-    list-style: none;
-    cursor: pointer;
-    
-    
+.right ul li,
+.off-screen li {
+  margin: 0px 10px;
+  list-style: none;
+  cursor: pointer;
 }
 
-.off-screen li{
-    margin: 42px;
+.off-screen ul {
+  margin-top: 82px;
 }
 
-.right a,.off-screen a {
-    border-radius: 100px;
-    border-bottom: 1px solid #222222;
-    color: #222222 ;
-    text-decoration: none;
-    padding: 12px ;
+.off-screen li {
+  margin: 42px;
 }
 
-.right li :hover, .off-screen li :hover {
-    color: #ffffff;
-    background-color: #222222;
-    border-bottom: none;
-    transition: 300ms ease-in-out 150ms;
+.right a,
+.off-screen a {
+  border-radius: 100px;
+  border: 1px solid #222222;
+  color: #222222;
+  text-decoration: none;
+  padding: 12px;
 }
 
-.right ul  :nth-child(2) a, .off-screen ul :nth-child(2) a{
-    color: #3c99f0 !important;
-    border-bottom: 1px solid #3c99f0;
+.right li :hover,
+.off-screen li :hover {
+  color: #ffffff;
+  background-color: #222222;
+  transition: 300ms ease-in-out 150ms;
 }
 
-.right ul :nth-child(2) a:hover,.off-screen ul :nth-child(2) a:hover {
-    background-color: #3c99f0 !important;
-    color: #ffffff !important;
+.right ul :nth-child(2) a,
+.off-screen ul :nth-child(2) a {
+  color: #3c99f0 !important;
+  border: 1px solid #3c99f0;
 }
 
+.right ul :nth-child(2) a:hover,
+.off-screen ul :nth-child(2) a:hover {
+  background-color: #3c99f0 !important;
+  color: #ffffff !important;
+}
 
 .left {
-    font-size: 40px;
-    cursor: pointer;
+  font-size: 40px;
+  cursor: pointer;
 }
 
-
 .firstSection {
-    margin: 24px 20px;
+  margin: 24px 20px;
 }
 
 .topSection {
-    text-align: center;
+  text-align: center;
 }
 
 .topSection span {
-    font-size: 75px;
-    font-weight: 700;
+  font-size: 75px;
+  font-weight: 700;
 }
 
 .topSection p {
-    line-height: 51px;
-    width: 100vw;
-    font-size: 2.5rem;
+  line-height: 51px;
+  width: 100vw;
+  font-size: 2.5rem;
 }
 
 .bottomSection {
-    height: 100%;
-    width: 20%;
-    margin-top: 30px;
-
+  height: 100%;
+  width: 20%;
+  margin-top: 30px;
 }
 
 .bottomSection img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 #element {
-    font-size: 75px;
+  font-size: 75px;
 }
 
 .secondSection {
-    text-align: center;
-    height: 500px;
+  text-align: center;
+  height: 500px;
 }
 
 .about {
-    font-size: 1.5rem;
-    width: 80%;
+  font-size: 1.5rem;
+  width: 80%;
 }
 
 .thirdSection {
-    margin: 22px;
-    height: 100vh;
+  margin: 22px;
+  height: 100vh;
 }
 
 #f-end {
-    padding: 22px;
+  padding: 22px;
 }
 
 .wrapper {
-    font-size: 4rem;
-    padding: 2px 20px;
-    border: 4px solid #222222;
-    border-radius: 50%;
+  font-size: 4rem;
+  padding: 2px 20px;
+  border: 4px solid #222222;
+  border-radius: 50%;
 }
 
 .thirdSection h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .thirdSection span {
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 8px;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 8px;
 }
 
 #form-details {
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 #form-details form {
-    width: 70%;
-    align-items: flex-start;
+  width: 70%;
+  align-items: flex-start;
 }
 
 #form-details form span {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 #form-details form h2 {
-    font-size: 2.3rem;
-    line-height: 30px;
-    padding: 20px 0;
+  font-size: 2.3rem;
+  line-height: 30px;
+  padding: 20px 0;
 }
 
 #form-details form input,
 #form-details form textarea {
-    width: 100%;
-    padding: 12px 15px;
-    outline: none;
-    margin-bottom: 1rem;
-    border: none;
-    border-bottom: 1px solid #3c99f0;
-    border-left: 4px solid #3c99f0;
-    resize: none;
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #3c99f0;
+  border-left: 4px solid #3c99f0;
+  resize: none;
 }
 
 #form-details form button {
-    padding: 10px 6px;
-    border: none;
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 24px;
-    cursor: pointer;
+  padding: 10px 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 24px;
+  cursor: pointer;
 }
 
 #form-details form button:hover {
-    transition: 300ms ease-in-out 150ms;
-    scale: 1.2;
+  transition: 300ms ease-in-out 150ms;
+  scale: 1.2;
 }
 
 footer {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px;
-    margin-top: 0px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+  margin-top: 0px;
 }
 
 .logo {
-    font-size:3rem;
-    width: 10%;
-    font-weight: 700;
-    margin-right: auto;
+  font-size: 3rem;
+  width: 10%;
+  font-weight: 700;
+  margin-right: auto;
 }
 
 .links {
-    margin: 30px;
-    margin-right: auto;
+  margin: 30px;
+  margin-right: auto;
 }
 
 .links span {
-    font-size: 22px;
-    margin-bottom: 22px;
-    font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 22px;
+  font-weight: 700;
 }
 
 .links ul li {
-    list-style: none;
-    cursor: pointer;
-    padding: 0px 8px;
-    font-size: 1.2rem;
+  list-style: none;
+  cursor: pointer;
+  padding: 0px 8px;
+  font-size: 1.2rem;
 }
 
 .links ul li:hover {
-    color: #3c99f0;
-    transition: 0.3s ease-in-out 0.1s;
+  color: #3c99f0;
+  transition: 0.3s ease-in-out 0.1s;
 }
 
 .social {
-    justify-content: space-between;
-    margin: 20px;
+  justify-content: space-between;
+  margin: 20px;
 }
 
 .social span {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .socialLinks a {
-    margin: 12px;
-    font-size: 30px;
-    text-decoration: none;
-    color: #222222;
-    padding: 3px 10px;
-    border: 3px solid #222222;
-    border-radius: 50%;
+  margin: 12px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #222222;
+  padding: 3px 10px;
+  border: 3px solid #222222;
+  border-radius: 50%;
 }
 
 .socialLinks a:hover {
-    color: #ffffff;
-    background-color: #3c99f0;
-    transition: 0.2s ease-in-out;
+  color: #ffffff;
+  background-color: #3c99f0;
+  transition: 0.2s ease-in-out;
 }
 
 .copy {
-    width: 100%;
-    font-weight: 700;
-    font-size: 1.2rem;
-    padding-top: 12px;
-    border-top: 1px solid #222222;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-top: 12px;
+  border-top: 1px solid #222222;
 }
 
-.spacer{
-    aspect-ratio: 960/300;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.spacer {
+  aspect-ratio: 960/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
 }
 
 @media (max-width: 1023px) {
+  .topSection span {
+    font-size: 3rem;
+  }
 
-    .topSection span {
-        font-size: 3rem;
-    }
-    
-    .topSection p {
-        font-size: 1.3rem;
-        line-height: 2rem;
-    }
-    
-    .bottomSection {
-        width: 40%;
-    }
-    #element {
-        font-size: 3rem;
-    }
+  .topSection p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
 
-    .secondSection {
-        height: 300px;
-    }
+  .bottomSection {
+    width: 40%;
+  }
+  #element {
+    font-size: 3rem;
+  }
 
-    .about {
-        font-size: 1rem;
+  .secondSection {
+    height: 300px;
+  }
 
-    }
+  .about {
+    font-size: 1rem;
+  }
 
-    footer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-    .logo {
-        font-size: 4rem;
-        margin-left: auto;
-        width: 50%;
-    }
+  .logo {
+    font-size: 4rem;
+    margin-left: auto;
+    width: 50%;
+  }
 
-    .links {
+  .links {
+    margin: 30px;
+    padding: 28px;
+  }
 
-        margin: 30px;
-        padding: 28px;
+  .links ul {
+    justify-content: space-between;
+    flex-direction: column;
+  }
 
-    }
-
-    .links ul {
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .socialLinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-    }
+  .socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
-    @media (max-width: 700px) {
+@media (max-width: 700px) {
+  .list {
+    display: none;
+  }
 
-        .list{
-            display: none;
-        }
+  .mobile {
+    display: block;
+  }
 
-        .mobile{
-            display: block;
-        }
+  .bottomSection {
+    width: 40%;
+  }
 
-        .bottomSection {
-            width: 40%;
-        }
+  .about {
+    font-size: 18px;
+  }
 
-        .about{
-            font-size: 18px;
-        }
-        
-        .thirdSection{
-            height: 100vh;
-            margin: 60px 22px;
-        }
-        
-        #form-details form{
-            width: 100%;
-        }
+  .thirdSection {
+    height: 100vh;
+    margin: 0px 22px 60px 22px;
+  }
 
-        .logo{
-            font-size: 3rem;
-        }
-    }
+  #form-details form {
+    width: 100%;
+  }
 
-    @media (max-width: 536px){
+  .logo {
+    font-size: 3rem;
+  }
+}
 
-        .left{
-            font-size: 1.8rem;
-            position: absolute;
-            left: 0;
-            margin: 12px;
-        }
-        .topSection span{
-            font-size: 2.3rem;
-        }
+@media (max-width: 536px) {
+  .left {
+    font-size: 1.8rem;
+    position: absolute;
+    left: 0;
+    margin: 12px;
+  }
+  .topSection span {
+    font-size: 2.3rem;
+  }
 
-        .topSection p{
-            font-size: 1.3rem;
-        }
+  .topSection p {
+    font-size: 1.3rem;
+  }
 
-        #element{
-            font-size: 2rem;
-        }
+  #element {
+    font-size: 2rem;
+  }
 
-        .secondSection{
-            font-size: 12px;
-            height: 70vh;
-        }
+  .secondSection {
+    font-size: 12px;
+    height: 80vh;
+  }
 
-        .thirdSection{
-            margin: 120px 22px;
-        }
-
-
-    }
+  .thirdSection {
+    margin: 0px 22px 220px 22px;
+  }
+}
