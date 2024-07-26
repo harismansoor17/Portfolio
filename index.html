@@ -23,7 +23,7 @@
         <div class="left"><span>Haris Mansoor</span></div>
 
         <div class="off-screen">
-          <div class="spacer" style="background-image: url('/img/layer3.svg');"></div>
+          <div class="spacer" style="background-image: url('./img/layer3.svg');"></div>
           <div id="close">
             <i class="fa-regular fa-circle-xmark"></i>
           </div>
@@ -83,7 +83,7 @@
 
       <div
         class="spacer"
-        style="margin-top: -10px; background-image: url('/img/layer1.svg')"
+        style="margin-top: -10px; background-image: url('./img/layer1.svg')"
       ></div>
 
       <section id="f-end" class="thirdSection flex flex-col item-center">
@@ -120,22 +120,22 @@
       <form class="flex flex-col" action="">
         <span>Reach Out</span>
         <h2 class="blue">Don't be shy!</h2>
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="E-mail" />
-        <input type="text" placeholder="Subject" />
+        <input type="text" id="name" placeholder="Name" />
+        <input type="text" id="email" placeholder="E-mail" />
+        <input type="text" id="subject" placeholder="Subject" />
         <textarea
           name=""
-          id=""
+          id="message"
           cols="30"
           rows="10"
           placeholder="Message.."
         ></textarea>
-        <button class="bg-blue white">Submit</button>
+        <button id="submit" class="bg-blue white">Submit</button>
       </form>
     </section>
     <div
       class="spacer"
-      style="margin-top: -10px; background-image: url(/img/layer2.svg)"
+      style="margin-top: -10px; background-image: url(./img/layer2.svg)"
     ></div>
 
     <footer class="flex item-center">
@@ -165,6 +165,7 @@
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
