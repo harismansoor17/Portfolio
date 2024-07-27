@@ -41,7 +41,7 @@ var typed = new Typed("#element", {
           + "<br> Email: " + usrEmail.value
           + "<br> Message: " + messageBody.value
   }).then(
-  message => alert("Form Submited")
+  message => alert("Form Submited Successfully")
   )
 };
 
