@@ -116,8 +116,9 @@
       </section>
     </main>
 
-       <section class="bg-black white" id="form-details">
-      <form class="flex flex-col" action="">
+    <section class="bg-black white" id="form-details">
+      <form class="flex flex-col" onsubmit="sendEmail(); reset(); return false;"  action="">
+
         <span>Reach Out</span>
         <h2 class="blue">Don't be shy!</h2>
         <input type="text" id="name" placeholder="Name" />
@@ -130,7 +131,8 @@
           rows="10"
           placeholder="Message.."
         ></textarea>
-        <button type="button" id="submit" class="bg-blue white">Submit</button>
+
+        <button type="button" id="submit" onclick="sendEmail()" class="bg-blue white">Submit</button>
       </form>
     </section>
     <div
@@ -149,6 +151,7 @@
           <li>Contact Me</li>
         </ul>
       </div>
+      
       <div class="social flex item-center flex-col">
         <span>Social Links</span>
         <div class="socialLinks">
@@ -165,6 +168,7 @@
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -2,6 +2,13 @@ let ham = document.querySelector(".mobile");
 let close = document.querySelector("#close");
 let menu = document.querySelector(".off-screen");
 
+let submitBtn = document.querySelector("#submit");
+let usrEmail = document.querySelector("#email");
+let subjectBody = document.querySelector("#subject");
+let usrName = document.querySelector("#name");
+let messageBody = document.querySelector("#message");
+
+
      // HAM MENU
 
 ham.addEventListener("click", () => {
@@ -21,7 +28,10 @@ var typed = new Typed("#element", {
   typeSpeed: 25,
 });
          //  
-      //  SMTP JS
+
+
+         //  SMTP JS
+
          function sendEmail() {
 
   Email.send({
@@ -33,9 +43,8 @@ var typed = new Typed("#element", {
           + "<br> Email: " + usrEmail.value
           + "<br> Message: " + messageBody.value
   }).then(
-  message => alert("Form Submited")
+  message => alert("Form Submited Successfully")
   )
 };
-
-
             // 
+
