@@ -110,6 +110,7 @@ nav ul {
   margin: 0px 10px;
   list-style: none;
   cursor: pointer;
+  transition: 300ms ease-in-out 150ms !important;
 }
 
 .off-screen ul {
@@ -133,7 +134,6 @@ nav ul {
 .off-screen li :hover {
   color: #ffffff;
   background-color: #222222;
-  transition: 300ms ease-in-out 150ms;
 }
 
 .right ul :nth-child(2) a,
@@ -253,17 +253,17 @@ nav ul {
   resize: none;
 }
 
-#form-details form button {
+#form-details button {
   padding: 10px 6px;
   border: none;
   font-size: 1rem;
   font-weight: 700;
   border-radius: 24px;
   cursor: pointer;
+  transition: 300ms ease-in-out 150ms;
 }
 
-#form-details form button:hover {
-  transition: 300ms ease-in-out 150ms;
+#form-details button:hover {
   scale: 1.2;
 }
 
@@ -292,16 +292,21 @@ footer {
   font-weight: 700;
 }
 
-.links ul li {
+.links li {
   list-style: none;
   cursor: pointer;
   padding: 0px 8px;
   font-size: 1.2rem;
 }
 
-.links ul li:hover {
-  color: #3c99f0;
+.links a{
+  text-decoration: none;
+  color: #222222;
   transition: 0.3s ease-in-out 0.1s;
+}
+
+.links a:hover {
+  color: #3c99f0;
 }
 
 .social {
@@ -323,12 +328,12 @@ footer {
   padding: 3px 10px;
   border: 3px solid #222222;
   border-radius: 50%;
+  transition: 0.2s ease-in-out;
 }
 
 .socialLinks a:hover {
   color: #ffffff;
   background-color: #3c99f0;
-  transition: 0.2s ease-in-out;
 }
 
 .copy {
