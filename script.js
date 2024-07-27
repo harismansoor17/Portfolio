@@ -29,7 +29,9 @@ var typed = new Typed("#element", {
 });
          //  
 
+
          //  SMTP JS
+
          function sendEmail() {
 
   Email.send({
@@ -44,6 +46,5 @@ var typed = new Typed("#element", {
   message => alert("Form Submited Successfully")
   )
 };
-
-
             // 
+
