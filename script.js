@@ -21,28 +21,21 @@ var typed = new Typed("#element", {
   typeSpeed: 25,
 });
          //  
-        //  SMTP JS
-submitBtn. addEventListener("click", () => {
-let email = document.querySelector("#email");
-let subject = document.querySelector("#subject");
-let name = document.querySelector("#name");
-let message = document.querySelector("#message");
+      //  SMTP JS
+         function sendEmail() {
 
   Email.send({
-    SecureToken: "02466251-0830-4d33-9541-8d1c49342502",
+    SecureToken:'a09f26f6-fa3d-4786-b430-435552b7ccf2',
     To : 'harisdev2005@gmail.com',
-    From : email.value,
-    Subject : subject.value,
-    Body : "Name: " + name.value 
-          + "<br> Email: " + email.value
-          + "<br> Message: " + message.value
+    From : 'harisdev2005@gmail.com',
+    Subject : subjectBody.value,
+    Body : "Name: " + usrName.value 
+          + "<br> Email: " + usrEmail.value
+          + "<br> Message: " + messageBody.value
   }).then(
-  message => alert(message)
-  ).then(
-    message => alert("Submited")
+  message => alert("Form Submited")
   )
-
-});
+};
 
 
             // 
