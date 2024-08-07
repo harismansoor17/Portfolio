@@ -110,7 +110,6 @@ nav ul {
   margin: 0px 10px;
   list-style: none;
   cursor: pointer;
-  transition: 300ms ease-in-out 150ms !important;
 }
 
 .off-screen ul {
@@ -197,7 +196,7 @@ nav ul {
 }
 
 .thirdSection {
-  margin: 0px 22px 130px 22px;
+  margin: 0px 22px 350px 22px;
   height: 100vh;
 }
 
@@ -299,7 +298,7 @@ footer {
   font-size: 1.2rem;
 }
 
-.links a{
+.links a {
   text-decoration: none;
   color: #222222;
   transition: 0.3s ease-in-out 0.1s;
@@ -350,7 +349,6 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
 @media (max-width: 1023px) {
@@ -376,6 +374,10 @@ footer {
 
   .about {
     font-size: 1rem;
+  }
+
+  .thirdSection {
+    margin: 0px 22px 350px 22px;
   }
 
   footer {
@@ -409,7 +411,7 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .list {
     display: none;
   }
@@ -427,8 +429,7 @@ footer {
   }
 
   .thirdSection {
-    height: 100vh;
-    margin: 0px 22px 60px 22px;
+    margin: 0px 22px 380px 22px;
   }
 
   #form-details form {
@@ -465,6 +466,49 @@ footer {
   }
 
   .thirdSection {
-    margin: 0px 22px 220px 22px;
+    margin: 0px 22px 430px 22px;
+  }
+}
+
+@media (max-width: 466px) {
+  .topSection span {
+    font-size: 1.8rem;
+  }
+  .topSection p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+  #element {
+    font-size: 1.5rem;
+  }
+  .secondSection {
+    height: 100%;
+  }
+  .about {
+    font-size: 12px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .topSection span {
+    font-size: 1.6rem;
+  }
+  .topSection p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  #element {
+    font-size: 1.3rem;
+  }
+  .secondSection {
+    height: 100%;
+  }
+  .about {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .thirdSection {
+    margin: 0px 22px 520px 22px;
   }
 }
