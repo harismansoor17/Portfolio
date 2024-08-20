@@ -5,6 +5,7 @@
 }
 ::-webkit-scrollbar{
   width: 5px;
+  background-color: #222222;
 }
 ::-webkit-scrollbar-thumb{
   background-color: #3c99f0;
