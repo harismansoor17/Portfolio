@@ -291,7 +291,7 @@ nav ul a li:hover {
   background-repeat: no-repeat;
   z-index: -1;
   transition: filter 0.3s ease-in-out;
-  filter: blur(0px); 
+  filter: blur(0px); /* Default, no blur */
 }
 
 .projects:first-child::before {
@@ -307,16 +307,14 @@ nav ul a li:hover {
 .projects .details {
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 2;
 }
 
 .projects:hover::before {
-  filter: blur(5px); 
-  z-index: 0;
+  filter: blur(5px); /* Apply blur on hover */
 }
 
 .projects:hover .details {
-  opacity: 1; 
+  opacity: 1; /* Show details on hover */
 }
 
 .projects span {
