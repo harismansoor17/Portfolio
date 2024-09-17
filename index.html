@@ -15,7 +15,13 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.2.4/kute.min.js"
+      integrity="sha512-ExzTv2b9+LEDBzzlAfT4rSa2C6ncivquUGYGWCPS4yIPjhg+eVi5cSi5NLGZZfK8p/xA4OqAohgfmJT8uWKgpw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
     <title>Haris Mansoor</title>
   </head>
 
@@ -25,35 +31,45 @@
         <div class="left"><span>Haris Mansoor</span></div>
 
         <div class="off-screen">
-          <div class="spacer" style="background-image: url('./img/layer3.svg');"></div>
+          <div
+            class="spacer"
+            style="background-image: url('./img/layer3.svg')"
+          ></div>
           <div id="close">
             <i class="fa-regular fa-circle-xmark"></i>
           </div>
           <ul>
-            <li><a href="#f-end" >Services</a></li>
-            <li><a href="https://github.com/harismansoor17" target="_blank">My Projects</a></li>
-            <li><a href="#form-details" >Contact Me</a></li>
+            
+            <a href="#pro-sec">
+              <li 
+                >My Projects </li>
+            </a>
+            <a href="#form-details">
+              <li>Contact Me</li>
+            </a>
           </ul>
         </div>
 
         <div class="right">
-          <ul class="flex justify-center list">          
-              <li><a href="#f-end" >Services</a></li>
-              <li><a href="https://github.com/harismansoor17" target="_blank">My Projects</a></li>
-              <li><a href="#form-details" >Contact Me</a></li>
-            </ul>
-            <div class="mobile hidden">
-              <i class="fa-solid fa-bars"></i>
-            </div>
+          <ul class="flex list">
             
+            <a href="#pro-sec">
+              <li 
+                >My Projects </li>
+            </a>
+            <a href="#form-details">
+              <li>Contact Me</li>
+            </a>
+          </ul>
+          <div class="mobile hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <section
-        class="firstSection black flex justify-center item-center flex-col"
-      >
+      <section class="firstSection black flex justify-center item-center">
         <div class="topSection">
           <span class="black">YO! I'm <span class="blue">Haris</span> ; )</span>
           <p class="black">
@@ -63,64 +79,91 @@
           <span class="blue" id="element"></span>
         </div>
         <div class="bottomSection">
-          <img src="img/Profile.jpeg" alt="" />
+          <img src="img/Profile.webp" alt="" />
         </div>
       </section>
 
       <section
-        class="secondSection bg-blue white flex item-center justify-center"
+        class="secondSection bg-black flex item-center justify-center flex-col"
       >
-        <div class="about">
-          <span>
-            I'm, a passionate beginner front-end developer with a keen eye for
-            design and a love for coding. My journey into web development began
-            with a fascination for how websites are built and a desire to create
-            visually stunning and user-friendly web experiences. Armed with
-            skills in HTML, CSS, and JavaScript.Welcome to my portfolio, where
-            you can see my projects and follow my journey in web development.
-            Let's create something awesome together!</span
-          >
+        <span class="white">Technologies I Use</span>
+        <div class="techIcons flex item-center">
+          <div class="languages">
+            <img src="img/icons/html.svg" alt="" />
+            <img src="img/icons/css.svg" alt="" />
+            <img src="img/icons/js.svg" alt="" />
+          </div>
+          <div class="libraries">
+            <img src="img/icons/boot strap.svg" alt="" />
+            <img src="img/icons/tailwind.svg" alt="" />
+          </div>
+          <div class="framework">
+            <img src="img/icons/reactjs.svg" alt="" />
+          </div>
         </div>
       </section>
 
       <div
         class="spacer"
-        style="margin-top: -10px; background-image: url('./img/layer1.svg')"
+        style="margin-top: -25px; background-image: url('./img/layer1.svg')"
       ></div>
 
-      <section id="f-end" class="thirdSection flex flex-col item-center">
-        <div class="flex item-center justify-center flex-col">
-          <div class="wrapper">
-            <i class="fa-solid fa-pen-ruler"></i>
+      <section id="pro-sec" class="thirdSection flex flex-col">
+        <span>My Projects</span>
+        <p>All Projects are Unique</p>
+        <div id="projectsSection">
+          <div class="projects" >
+            <div class="details">
+              <span>POWER OF API's</span>
+              <p>Collection of APPs which uses Publically available APIs</p>
+              <a href="https://harismansoor17.github.io/Power-of-APIs/">Visit...</a>
+              <div class="technologies">
+                <img src="img/icons/html.svg" alt="" />
+                <img src="img/icons/tailwind.svg" alt="" />
+                <img src="img/icons/js.svg" alt="" />
+              </div>
+            </div>
           </div>
-          <br />
-          <h2 class="blue">Front-End</h2>
-          <span
-            >I create engaging websites with beautiful designs, ensuring they
-            are user-friendly and perform seamlessly on all devices.</span
+          <div class="projects" ">
+            <div class="details">
+              <span>Zirax</span>
+              <p>Ecommerce Store</p>
+              <a href="">Visit...</a>
+              <div class="technologies">
+                <img src="img/icons/html.svg" alt="" />
+                <img src="img/icons/tailwind.svg" alt="" />
+                <img src="img/icons/js.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="projects" >
+            <div class="details">
+              <span>Portfolio</span>
+              <p>
+                Personal showcase of work skills</p>
+                <a href="#">Present...</a>
+                <div class="technologies">
+                  <img src="img/icons/html.svg" alt="" />
+                  <img src="img/icons/css.svg" alt="" />
+                  <img src="img/icons/js.svg" alt="" />
+                </div>
+              </div>
+          </div>
+          <div
+            class="projects flex justify-center item-center flex-col ComingSoon"
           >
-          <br />
-          <br />
-          <h3 class="blue">Languages</h3>
-          <span>HTML,CSS,JS,Git</span>
-          <br />
-          <br />
-          <h3 class="blue">Tools</h3>
-
-          <span>Vscode</span>
-          <span>Boot Strap</span>
-          <span>Tailwind</span>
-          <span>Wordpress</span>
-          <span>Elementor</span>
-          <span>WooCommerence</span>
-          <span>Github</span>
+            <p>More Coming Soon...</p>
+          </div>
         </div>
       </section>
     </main>
 
     <section class="bg-black white" id="form-details">
-      <form class="flex flex-col" onsubmit="sendEmail(); reset(); return false;"  action="">
-
+      <form
+        class="flex flex-col"
+        onsubmit="sendEmail(); reset(); return false;"
+        action=""
+      >
         <span>Reach Out</span>
         <h2 class="blue">Don't be shy!</h2>
         <input type="text" id="name" placeholder="Name" />
@@ -134,7 +177,14 @@
           placeholder="Message.."
         ></textarea>
 
-        <button type="button" id="submit" onclick="sendEmail()" class="bg-blue white">Submit</button>
+        <button
+          type="button"
+          id="submit"
+          onclick="sendEmail()"
+          class="bg-blue white"
+        >
+          Submit
+        </button>
       </form>
     </section>
     <div
@@ -147,23 +197,32 @@
       <div class="links">
         <span>links</span>
         <ul class="flex item-center justify-center">
-          <li><a href="#f-end" >Services</a></li>
-          <li><a href="https://github.com/harismansoor17" target="_blank">My Projects</a></li>
-          <li><a href="#form-details" >Contact Me</a></li>
+          <li><a href="#f-end">Services</a></li>
+          <li>
+            <a href="https://github.com/harismansoor17" target="_blank"
+              >My Projects</a
+            >
+          </li>
+          <li><a href="#form-details">Contact Me</a></li>
         </ul>
       </div>
-      
+
       <div class="social flex item-center flex-col">
         <span>Social Links</span>
-        <div class="socialLinks">
-          <a href="https://github.com/harismansoor17" target="_blank"><i class="fa-brands fa-github"></i></a>
-<!--           <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> -->
-          <a href="www.linkedin.com/in/haris-mansoor-b77235318" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a> 
-          <a href="mailto:harisdev2005@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        <div class="socialLinks flex item-center justify-center ">
+          <a href="https://github.com/harismansoor17" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+            <a href="www.linkedin.com/in/haris-mansoor-b77235318" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="mailto:harisdev2005@gmail.com"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
         </div>
       </div>
 
-      <div class="copy flex justify-center item-center">
+      <div class="copy">
         Rights Reserved by ME @ 2024 &copy
       </div>
     </footer>
