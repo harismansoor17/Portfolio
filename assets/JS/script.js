@@ -23,7 +23,7 @@ close.addEventListener("click", () => {
 
 // Type Script
 var typed = new Typed("#element", {
-  strings: ["Web Designer","React Developer", "Front-End Developer"],
+  strings: ["Web Designer","React Developer", "Php Developer","Full Stack Developer"],
   typeSpeed: 50,
   showCursor: true,
 });

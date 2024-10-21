@@ -4,33 +4,29 @@
     <title>Haris Mansoor</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Haris Mansoor's Web Portfolio" />
+    <meta name="description" content="This Website is a Protfolio of Haris Mansoor a Full Stack Developer, This site show cases his skill as a Full Stack Developer" />
     <meta name="author" content="Haris Mansoor" />
     <meta
       name="keyword"
       content="Haris,Haris Mansoor, harismansoor, front-end, react-developer"
     />
     <meta name="twitter:card" content="Haris Mansoor's Web Portfolio" />
-    <meta name="twitter:image" content="./img/favicon.webp" />
+    <meta name="twitter:image" content="./assets/img/favicon.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.2.4/kute.min.js"
       integrity="sha512-ExzTv2b9+LEDBzzlAfT4rSa2C6ncivquUGYGWCPS4yIPjhg+eVi5cSi5NLGZZfK8p/xA4OqAohgfmJT8uWKgpw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <link rel="icon" type="image/webp" href="./img/favicon.webp" />
+    <link rel="icon" type="image/webp" href="./assets/img/favicon.webp" />
   </head>
 
   <body class="bg-white black">
@@ -52,13 +48,14 @@
       </div>
 
       <div class="right">
-        <ul class="flex list">
+        <ul class="nav-links flex list">
           <li>
-            <a href="#pro-sec"> My Projects </a>
-          </li>
-          <li>
-            <a href="#form-details"> Contact Me </a>
-          </li>
+    <a href="#pro-sec" class="nav-btns"><span>My Projects</span></a>
+  </li>
+  <li>
+    <a href="#form-details" class="nav-btns contact-btn"><span>Contact Me</span></a>
+  </li>
+
         </ul>
         <div class="mobile hidden">
           <i class="fa-solid fa-bars"></i>
@@ -68,7 +65,7 @@
 
     <section class="hero-section black flex justify-center item-center">
       <div class="hero-top-section">
-        <span class="black">YO! I'm <span class="blue">Haris</span> ; )</span>
+        <span class="black">YO! I'm <s_ class="blue">Haris_</span></span>
         <p class="black">
           A budding front-end developer passionate about creating sleek,
           responsive web experiences.
@@ -76,22 +73,42 @@
         <span class="blue" id="element"></span>
       </div>
       <div class="hero-bottom-section">
-        <img src="./img/Profile.webp" alt="Haris's Profile Pic" />
+        <img src="./assets/img/Profile.webp" alt="Haris's Profile Pic" />
       </div>
     </section>
 
-    <section class="tech-stack-section bg-black">
+    <section class="tech-stack-section bg-black white">
       <div class="tech-stack-section-wrapper">
-        <h1 class="white">My Tech Stack</h1>
-        <div class="front-end">
-          <h2>Front End:</h2>
+        <h1>My Tech Stack</h1>
+        <div class="front-end flex ">
+          <h2 class="blue">Front End:</h2>
+          <div class="front-end-tech-logos">
+            <img src="./assets/img/icons/html.svg" alt="HTML Icon">
+            <img src="./assets/img/icons/css.svg" alt="CSS Icon">
+            <img src="./assets/img/icons/js.svg" alt="JS Icon">
+          </div>
+        </div>
+        <div class="front-end-libraries flex">
+          <h3>Libraries:</h3>
+          <div class="front-end-libraries-icon">
+            <img src="./assets/img/icons/boot strap.svg" alt="BootStrap Icon">
+            <img src="./assets/img/icons/tailwind.svg" alt="TailWind Icon">
+            <img src="./assets/img/icons/reactjs.svg" alt="ReactJs Icon">
+          </div>
+        </div>
+        <div class="back-end flex">
+          <h2 class="red">Back End:</h2>
+          <div class="back-end-tech-logos">
+            <img src="./assets/img/icons/php.svg" alt="PHP Icon">
+            <img src="./assets/img/icons/mysql.svg" alt="MySQL Icon">
+          </div>
         </div>
       </div>
     </section>
 
     <section id="pro-sec" class="projects-section flex flex-col">
-      <span>My Projects</span>
-      <p>All Projects are Unique</p>
+      <h1>My Projects</h1>
+      <span>All Projects are Unique</span>
       <div class="projects-container">
         <div class="projects">
           <div class="details">
@@ -101,9 +118,9 @@
               >Visit...</a
             >
             <div class="technologies">
-              <img src="./img/icons/html.svg" alt="HTML" />
-              <img src="./img/icons/tailwind.svg" alt="Tailwind Css" />
-              <img src="./img/icons/js.svg" alt="JS" />
+              <img src="./assets/img/icons/html.svg" alt="HTML" />
+              <img src="./assets/img/icons/tailwind.svg" alt="Tailwind Css" />
+              <img src="./assets/img/icons/js.svg" alt="JS" />
             </div>
           </div>
         </div>
@@ -113,9 +130,9 @@
             <p>Ecommerce Store</p>
             <a href="">Visit...</a>
             <div class="technologies">
-              <img src="./img/icons/html.svg" alt="HTML" />
-              <img src="./img/icons/tailwind.svg" alt="Tailwind CSS" />
-              <img src="./img/icons/js.svg" alt="JS" />
+              <img src="./assets/img/icons/html.svg" alt="HTML" />
+              <img src="./assets/img/icons/tailwind.svg" alt="Tailwind Css" />
+              <img src="./assets/img/icons/js.svg" alt="JS" />
             </div>
           </div>
         </div>
@@ -125,14 +142,14 @@
             <p>Personal showcase of work skills</p>
             <a href="#">Present...</a>
             <div class="technologies">
-              <img src="./img/icons/html.svg" alt="HTML" />
-              <img src="./img/icons/css.svg" alt="CSS" />
-              <img src="./img/icons/js.svg" alt="JS" />
+              <img src="./assets/img/icons/html.svg" alt="HTML" />
+              <img src="./assets/img/icons/css.svg" alt="Tailwind Css" />
+              <img src="./assets/img/icons/js.svg" alt="JS" />
             </div>
           </div>
         </div>
         <div
-          class="projects flex justify-center item-center flex-col ComingSoon"
+          class="coming-soon flex justify-center item-center flex-col"
         >
           <p>More Coming Soon...</p>
         </div>
@@ -146,8 +163,8 @@
           onsubmit="sendEmail(); reset(); return false;"
           action=""
         >
-          <span>Reach Out</span>
-          <h2 class="blue">Don't be shy!</h2>
+          <h2>Reach Out</h2>
+          <h3 class="blue">Don't be shy!</h3>
           <input type="text" id="name" placeholder="Name" />
           <input type="text" id="email" placeholder="E-mail" />
           <input type="text" id="subject" placeholder="Subject" />
@@ -158,32 +175,23 @@
             placeholder="Message.."
           ></textarea>
 
-          <button
-            type="button"
-            id="submit"
-            onclick="sendEmail()"
-            class="bg-blue white"
-          >
-            Submit
-          </button>
+        
+            <button
+              type="button"
+              id="submit"
+              onclick="sendEmail()"
+              class="btn form-btn"
+            >
+              <span>Submit</span>
+            </button>
+          
         </form>
       </div>
     </section>
 
     <footer class="flex item-center">
-      <div class="logo blue">Haris_</div>
-      <div class="web-links">
-        <span>links</span>
-        <ul class="flex item-center justify-center">
-          <li><a href="#f-end">Services</a></li>
-          <li>
-            <a href="https://github.com/harismansoor17" target="_blank"
-              >My Projects</a
-            >
-          </li>
-          <li><a href="#form-details">Contact Me</a></li>
-        </ul>
-      </div>
+      <div class="logo red">Haris_</span></div>
+     
 
       <div class="social flex item-center flex-col">
         <span>Social Links</span>
@@ -191,7 +199,7 @@
           <a href="https://github.com/harismansoor17" target="_blank"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="www.linkedin.com/in/haris-mansoor-b77235318" target="_blank"
+          <a class="linked-in-icon" href="www.linkedin.com/in/haris-mansoor-b77235318" target="_blank"
             ><i class="fa-brands fa-linkedin-in"></i
           ></a>
           <a href="mailto:harisdev2005@gmail.com"
@@ -200,11 +208,11 @@
         </div>
       </div>
 
-      <div class="copy-right">Rights Reserved by ME @ 2024 &copy</div>
+      <div class="copy-right">Rights Reserved by <span class="red">ME</span> @ 2024 &copy</div>
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
-    <script src="script.js"></script>
+    <script src="./assets/JS/script.js"></script>
   </body>
 </html>
