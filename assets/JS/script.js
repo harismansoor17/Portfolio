@@ -12,12 +12,12 @@ let messageBody = document.querySelector("#message");
 
 ham.addEventListener("click", () => {
   // console.log('clicked');
-  menu.style.right = "0";
+  menu.style.top = "0";
 });
 
 close.addEventListener("click", () => {
   // console.log('clicked');
-  menu.style.right = "-500px";
+  menu.style.top = "-1000px";
 });
 //
 
