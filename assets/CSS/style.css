@@ -266,6 +266,8 @@ nav ul  a  {
 
 .tech-stack-section {
   width: 100%;
+  background-color: #222222;
+  color: #ffffff;
 }
 .tech-stack-section-wrapper{ 
   width: 60%;
