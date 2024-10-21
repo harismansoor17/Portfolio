@@ -4,9 +4,12 @@
     <title>Haris Mansoor</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Haris Mansoor's Web Portfolio">
-    <meta name="author" content="Haris Mansoor">
-    <meta name="keyword" content="Haris,Haris Mansoor, harismansoor, front-end, react-developer">
+    <meta name="description" content="Haris Mansoor's Web Portfolio" />
+    <meta name="author" content="Haris Mansoor" />
+    <meta
+      name="keyword"
+      content="Haris,Haris Mansoor, harismansoor, front-end, react-developer"
+    />
     <meta name="twitter:card" content="Haris Mansoor's Web Portfolio" />
     <meta name="twitter:image" content="./img/favicon.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,175 +34,145 @@
   </head>
 
   <body class="bg-white black">
-    <header>
-      <nav class="flex item-center">
-        <div class="left"><span>Haris Mansoor</span></div>
+    <nav class="flex item-center">
+      <div class="left"><span>Haris Mansoor</span></div>
 
-        <div class="off-screen">
-          <div
-            class="spacer"
-            style="background-image: url('./img/layer3.svg')"
-          ></div>
-          <div id="close">
-            <i class="fa-regular fa-circle-xmark"></i>
-          </div>
-          <ul>
-            
-            <a href="#pro-sec">
-              <li 
-                >My Projects </li>
-            </a>
-            <a href="#form-details">
-              <li>Contact Me</li>
-            </a>
-          </ul>
+      <div class="off-screen">
+        <div id="close">
+          <i class="fa-regular fa-circle-xmark"></i>
         </div>
+        <ul>
+          <li>
+            <a href="#pro-sec"> My Projects </a>
+          </li>
+          <li>
+            <a href="#form-details"> Contact Me </a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="right">
-          <ul class="flex list">
-            
-            <a href="#pro-sec">
-              <li 
-                >My Projects </li>
-            </a>
-            <a href="#form-details">
-              <li>Contact Me</li>
-            </a>
-          </ul>
-          <div class="mobile hidden">
-            <i class="fa-solid fa-bars"></i>
-          </div>
+      <div class="right">
+        <ul class="flex list">
+          <li>
+            <a href="#pro-sec"> My Projects </a>
+          </li>
+          <li>
+            <a href="#form-details"> Contact Me </a>
+          </li>
+        </ul>
+        <div class="mobile hidden">
+          <i class="fa-solid fa-bars"></i>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
-    <main>
-      <section class="firstSection black flex justify-center item-center">
-        <div class="topSection">
-          <span class="black">YO! I'm <span class="blue">Haris</span> ; )</span>
-          <p class="black">
-            A budding front-end developer passionate about creating sleek,
-            responsive web experiences.
-          </p>
-          <span class="blue" id="element"></span>
+    <section class="hero-section black flex justify-center item-center">
+      <div class="hero-top-section">
+        <span class="black">YO! I'm <span class="blue">Haris</span> ; )</span>
+        <p class="black">
+          A budding front-end developer passionate about creating sleek,
+          responsive web experiences.
+        </p>
+        <span class="blue" id="element"></span>
+      </div>
+      <div class="hero-bottom-section">
+        <img src="./img/Profile.webp" alt="Haris's Profile Pic" />
+      </div>
+    </section>
+
+    <section class="tech-stack-section bg-black">
+      <div class="tech-stack-section-wrapper">
+        <h1 class="white">My Tech Stack</h1>
+        <div class="front-end">
+          <h2>Front End:</h2>
         </div>
-        <div class="bottomSection">
-          <img src="./img/Profile.webp" alt="Profile image of Haris" />
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section
-        class="secondSection bg-black flex item-center justify-center flex-col"
-      >
-        <span class="white">Technologies I Use</span>
-        <div class="techIcons flex item-center">
-          <div class="languages">
-            <img src="./img/icons/html.svg" alt="HTML" />
-            <img src="./img/icons/css.svg" alt="CSS" />
-            <img src="./img/icons/js.svg" alt="JS" />
-          </div>
-          <div class="libraries">
-            <img src="./img/icons/boot strap.svg" alt="Boot Strap" />
-            <img src="./img/icons/tailwind.svg" alt="Tailwind CSS" />
-          </div>
-          <div class="framework">
-            <img src="./img/icons/reactjs.svg" alt="RectJs" />
-          </div>
-        </div>
-      </section>
-
-      <div
-        class="spacer"
-        style="margin-top: -25px; background-image: url('./img/layer1.svg')"
-      ></div>
-
-      <section id="pro-sec" class="thirdSection flex flex-col">
-        <span>My Projects</span>
-        <p>All Projects are Unique</p>
-        <div id="projectsSection">
-          <div class="projects" >
-            <div class="details">
-              <span>POWER OF API's</span>
-              <p>Collection of APPs which uses Publically available APIs</p>
-              <a href="https://harismansoor17.github.io/Power-of-APIs/">Visit...</a>
-              <div class="technologies">
-                <img src="./img/icons/html.svg" alt="HTML" />
-                <img src="./img/icons/tailwind.svg" alt="Tailwind Css" />
-                <img src="./img/icons/js.svg" alt="JS" />
-              </div>
+    <section id="pro-sec" class="projects-section flex flex-col">
+      <span>My Projects</span>
+      <p>All Projects are Unique</p>
+      <div class="projects-container">
+        <div class="projects">
+          <div class="details">
+            <span>POWER OF API's</span>
+            <p>Collection of APPs which uses Publically available APIs</p>
+            <a href="https://harismansoor17.github.io/Power-of-APIs/"
+              >Visit...</a
+            >
+            <div class="technologies">
+              <img src="./img/icons/html.svg" alt="HTML" />
+              <img src="./img/icons/tailwind.svg" alt="Tailwind Css" />
+              <img src="./img/icons/js.svg" alt="JS" />
             </div>
           </div>
-          <div class="projects" ">
-            <div class="details">
-              <span>Zirax</span>
-              <p>Ecommerce Store</p>
-              <a href="">Visit...</a>
-              <div class="technologies">
-                <img src="./img/icons/html.svg" alt="HTML" />
-                <img src="./img/icons/tailwind.svg" alt="Tailwind CSS" />
-                <img src="./img/icons/js.svg" alt="JS" />
-              </div>
+        </div>
+        <div class="projects">
+          <div class="details">
+            <span>Zirax</span>
+            <p>Ecommerce Store</p>
+            <a href="">Visit...</a>
+            <div class="technologies">
+              <img src="./img/icons/html.svg" alt="HTML" />
+              <img src="./img/icons/tailwind.svg" alt="Tailwind CSS" />
+              <img src="./img/icons/js.svg" alt="JS" />
             </div>
           </div>
-          <div class="projects" >
-            <div class="details">
-              <span>Portfolio</span>
-              <p>
-                Personal showcase of work skills</p>
-                <a href="#">Present...</a>
-                <div class="technologies">
-                  <img src="./img/icons/html.svg" alt="HTML" />
-                  <img src="./img/icons/css.svg" alt="CSS" />
-                  <img src="./img/icons/js.svg" alt="JS" />
-                </div>
-              </div>
-          </div>
-          <div
-            class="projects flex justify-center item-center flex-col ComingSoon"
-          >
-            <p>More Coming Soon...</p>
+        </div>
+        <div class="projects">
+          <div class="details">
+            <span>Portfolio</span>
+            <p>Personal showcase of work skills</p>
+            <a href="#">Present...</a>
+            <div class="technologies">
+              <img src="./img/icons/html.svg" alt="HTML" />
+              <img src="./img/icons/css.svg" alt="CSS" />
+              <img src="./img/icons/js.svg" alt="JS" />
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+        <div
+          class="projects flex justify-center item-center flex-col ComingSoon"
+        >
+          <p>More Coming Soon...</p>
+        </div>
+      </div>
+    </section>
 
     <section class="bg-black white" id="form-details">
-      <form
-        class="flex flex-col"
-        onsubmit="sendEmail(); reset(); return false;"
-        action=""
-      >
-        <span>Reach Out</span>
-        <h2 class="blue">Don't be shy!</h2>
-        <input type="text" id="name" placeholder="Name" />
-        <input type="text" id="email" placeholder="E-mail" />
-        <input type="text" id="subject" placeholder="Subject" />
-        <textarea
-          name=""
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Message.."
-        ></textarea>
-
-        <button
-          type="button"
-          id="submit"
-          onclick="sendEmail()"
-          class="bg-blue white"
+      <div class="form-wrapper">
+        <form
+          class="flex flex-col"
+          onsubmit="sendEmail(); reset(); return false;"
+          action=""
         >
-          Submit
-        </button>
-      </form>
+          <span>Reach Out</span>
+          <h2 class="blue">Don't be shy!</h2>
+          <input type="text" id="name" placeholder="Name" />
+          <input type="text" id="email" placeholder="E-mail" />
+          <input type="text" id="subject" placeholder="Subject" />
+          <textarea
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message.."
+          ></textarea>
+
+          <button
+            type="button"
+            id="submit"
+            onclick="sendEmail()"
+            class="bg-blue white"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
-    <div
-      class="spacer"
-      style="margin-top: -10px; background-image: url(./img/layer2.svg)"
-    ></div>
 
     <footer class="flex item-center">
       <div class="logo blue">Haris_</div>
-      <div class="links">
+      <div class="web-links">
         <span>links</span>
         <ul class="flex item-center justify-center">
           <li><a href="#f-end">Services</a></li>
@@ -214,11 +187,11 @@
 
       <div class="social flex item-center flex-col">
         <span>Social Links</span>
-        <div class="socialLinks flex item-center justify-center ">
+        <div class="social-links flex item-center justify-center">
           <a href="https://github.com/harismansoor17" target="_blank"
             ><i class="fa-brands fa-github"></i
           ></a>
-            <a href="www.linkedin.com/in/haris-mansoor-b77235318" target="_blank"
+          <a href="www.linkedin.com/in/haris-mansoor-b77235318" target="_blank"
             ><i class="fa-brands fa-linkedin-in"></i
           ></a>
           <a href="mailto:harisdev2005@gmail.com"
@@ -227,9 +200,7 @@
         </div>
       </div>
 
-      <div class="copy">
-        Rights Reserved by ME @ 2024 &copy
-      </div>
+      <div class="copy-right">Rights Reserved by ME @ 2024 &copy</div>
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

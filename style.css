@@ -17,6 +17,12 @@
   cursor: grabbing;
 }
 
+html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
 body {
   min-width: 100%;
   font-family: "Poppins", sans-serif;
@@ -74,11 +80,15 @@ img {
 /*  */
 
 nav {
-  position: relative;
-  justify-content: space-around;
-  height: 5rem;
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0px 30px;
   width: 100vw;
-  border-bottom: 2px solid #222222;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgb(0, 0, 0, 0.3);
 }
 
 .mobile i {
@@ -106,8 +116,8 @@ nav {
   border-bottom: 1px solid #3c99f0;
   z-index: 1;
 }
-.off-screen ul{
-  margin-top: 4rem;
+.off-screen ul {
+  margin-top: 40px;
 }
 
 .hidden {
@@ -140,15 +150,17 @@ nav ul a {
   text-decoration: none;
   color: #222222;
 }
-nav ul a li {
-  margin: 1rem;
+nav ul li{
+  margin: 0px 0px 0px 20px;
+}
+nav ul  a  {
   border: 1px solid #222222;
   padding: 0.8rem;
   border-radius: 2rem;
   cursor: pointer;
   transition: all 0.2s ease;
 }
-nav ul a li:hover {
+nav ul a:hover {
   color: #ffffff;
   background-color: #3c99f0;
 }
@@ -157,35 +169,39 @@ nav ul a li:hover {
   cursor: pointer;
 }
 
-.firstSection {
+.hero-section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 30px auto;
+  padding: 100px 64px;
   justify-content: space-between;
   flex-direction: row;
-  margin: 2rem;
 }
 
-.topSection {
+.hero-top-section {
   width: 70%;
 }
 
-.topSection span {
+.hero-top-section span {
   font-size: 3rem;
   font-weight: 700;
 }
 
-.topSection p {
+.hero-top-section p {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 #element {
-  font-size: 2rem;
+  font-size: 38px;
+  line-height: 42px;
 }
-.bottomSection {
+.hero-bottom-section {
   height: 30%;
   width: 30%;
   margin: 1rem;
 }
 
-.bottomSection img {
+.hero-bottom-section img {
   animation: morph 8s ease-in-out infinite;
   position: relative;
   border: 5px solid #222222;
@@ -205,51 +221,41 @@ nav ul a li:hover {
   }
 }
 
-.secondSection {
-  height: 100%;
-  padding: 2rem;
+.tech-stack-section {
+  width: 100%;
+}
+.tech-stack-section-wrapper{  
+  width: 100%;
+  padding: 100px 64px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-.secondSection span {
-  font-size: 2.5rem;
+.tech-stack-section h1 {
+  font-size: 34px;
+  line-height: 38px;
   font-weight: 700;
-  border-bottom: 1px solid #ffffff;
-  margin-bottom: 3rem;
-}
-.techIcons {
-  flex-direction: row;
-}
-.languages,
-.libraries,
-.framework {
-  margin-right: 2rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-.languages:hover,
-.libraries:hover,
-.framework:hover {
-  transform: translateY(-10%);
-}
-
-.techIcons img {
-  height: 4rem;
-  width: 4rem;
-}
-
-.thirdSection {
-  height: 100%;
   text-align: center;
-  margin: 4rem;
+  margin-bottom: 40px;
 }
-.thirdSection span {
+
+
+.projects-section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 30px auto;
+  padding: 100px 64px;
+  text-align: center;
+  
+}
+.projects-section span {
   font-size: 3rem;
   font-weight: 700;
 }
-.thirdSection p {
+.projects-section p {
   font-size: 1.3rem;
 }
-#projectsSection {
+.projects-container {
   text-align: start;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -295,13 +301,13 @@ nav ul a li:hover {
 }
 
 .projects:first-child::before {
-  background-image: url('./img/projectsBG/Power of Api screen shot.webp');
+  background-image: url("./img/projectsBG/Power of Api screen shot.webp");
 }
 .projects:nth-child(2)::before {
-  background-image: url('./img/projectsBG/Zirax screen shot.webp');
+  background-image: url("./img/projectsBG/Zirax screen shot.webp");
 }
 .projects:nth-child(3)::before {
-  background-image: url('./img/projectsBG/Portfolio screen shot.webp');
+  background-image: url("./img/projectsBG/Portfolio screen shot.webp");
 }
 
 .projects .details {
@@ -333,8 +339,14 @@ nav ul a li:hover {
   width: 2rem;
 }
 
-#form-details {
-  padding: 2.5rem;
+#form-details { 
+  width: 100%;
+  padding: 100px 64px;
+}
+.form-wrapper{
+  width: 100%;
+  max-width: 1600px;
+  margin: 30px auto;
 }
 
 #form-details form {
@@ -365,7 +377,7 @@ nav ul a li:hover {
 }
 
 #form-details button {
-  padding: 15px 10px;
+  padding: 15px 20px;
   border: none;
   font-size: 1rem;
   font-weight: 700;
@@ -379,10 +391,12 @@ nav ul a li:hover {
 }
 
 footer {
+  width: 100%;
+  max-width: 1600px;
+  padding: 100px 64px 0px 64px;
+  margin: 0 auto;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 20px;
-  margin-top: 0px;
 }
 
 .logo {
@@ -392,31 +406,31 @@ footer {
   margin-right: auto;
 }
 
-.links {
+.web-links {
   margin: 30px;
   margin-right: auto;
 }
 
-.links span {
+.web-links span {
   font-size: 22px;
   margin-bottom: 22px;
   font-weight: 700;
 }
 
-.links li {
+.web-links li {
   list-style: none;
   cursor: pointer;
   padding: 0px 8px;
   font-size: 1.2rem;
 }
 
-.links a {
+.web-links a {
   text-decoration: none;
   color: #222222;
   transition: 0.2s ease;
 }
 
-.links a:hover {
+.web-links a:hover {
   color: #3c99f0;
 }
 
@@ -430,7 +444,7 @@ footer {
   font-weight: 700;
 }
 
-.socialLinks a {
+.social-links a {
   margin: 12px;
   font-size: 30px;
   text-decoration: none;
@@ -441,12 +455,12 @@ footer {
   transition: 0.2s ease;
 }
 
-.socialLinks a:hover {
+.social-links a:hover {
   color: #ffffff;
   background-color: #3c99f0;
 }
 
-.copy {
+.copy-right {
   width: 100%;
   font-weight: 700;
   font-size: 1.2rem;
@@ -466,12 +480,20 @@ footer {
 }
 
 @media (max-width: 1023px) {
-  .firstSection {
+  .hero-section {
     text-align: center;
     flex-direction: column;
-  }  
-  .topSection{
+  }
+  .hero-top-section {
     width: 100%;
+  }
+  .tech-stack-section-wrapper{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tech-stack-section h1{
+    margin-bottom: 20px;
   }
 
   footer {
@@ -487,17 +509,17 @@ footer {
     width: 50%;
   }
 
-  .links {
+  .web-links {
     margin: 30px;
     padding: 28px;
   }
 
-  .links ul {
+  .web-links ul {
     justify-content: space-between;
     flex-direction: column;
   }
 
-  .socialLinks {
+  .social-links {
     flex-direction: column;
   }
 }
@@ -516,24 +538,20 @@ footer {
   .mobile {
     display: block;
   }
-  .mobile i{
+  .mobile i {
     font-size: 25px;
   }
 
-  .bottomSection {
+  .hero-bottom-section {
     width: 40%;
   }
-  
-  .secondSection span{
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+
+  .tech-stack-section h1 {
+    font-size: 24px;
   }
+
   
-  .techIcons img {
-    height: 3rem;
-    width: 3rem;    
-  }
-  #projectsSection{
+  .projects-container {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
   }
@@ -548,59 +566,46 @@ footer {
 
 @media (max-width: 536px) {
   
-  
 }
 
 @media (max-width: 466px) {
-  .topSection span {
+  .hero-top-section span {
     font-size: 1.8rem;
   }
-  .topSection p {
+  .hero-top-section p {
     font-size: 1.3rem;
     line-height: 1.6rem;
   }
   #element {
     font-size: 1.5rem;
   }
-  .bottomSection {
+  .hero-bottom-section {
     width: 60%;
   }
 
-  .secondSection span{
-    font-size: 1.2rem;
+  .projects-section {
+    margin: 12px;
   }
-  .techIcons {
-    flex-direction: column;
+  .projects-container {
+    margin-top: 2rem;
   }
-  .languages,
-.libraries,
-.framework {
-  margin-right: 0px;
-  
-}
-.thirdSection {
-  margin: 12px;
-}
-#projectsSection{
-  margin-top: 2rem;
-}
 }
 
 @media (max-width: 380px) {
-  .left{
+  .left {
     font-size: 1.5rem;
   }
-  .topSection span {
+  .hero-top-section span {
     font-size: 1.6rem;
   }
-  .topSection p {
+  .hero-top-section p {
     font-size: 1rem;
     line-height: 1.2rem;
   }
   #element {
     font-size: 1.3rem;
   }
-  .copy{
+  .copy-right {
     font-size: 0.8rem;
   }
 }
