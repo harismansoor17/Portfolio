@@ -11,12 +11,10 @@ let messageBody = document.querySelector("#message");
 // HAM MENU
 
 ham.addEventListener("click", () => {
-  // console.log('clicked');
   menu.style.top = "0";
 });
 
 close.addEventListener("click", () => {
-  // console.log('clicked');
   menu.style.top = "-1000px";
 });
 //
@@ -35,7 +33,6 @@ const details = document.querySelectorAll(".details");
 projects.forEach((project, index) => {
   project.addEventListener("mouseover", () => {
     details[index].style.opacity = "1";
-    project.style.backgroundImage = "url()";
   });
 
   project.addEventListener("mouseout", () => {
