@@ -268,21 +268,29 @@ nav ul  a  {
 .tech-stack-section {
   width: 100%;
 }
-.tech-stack-section-wrapper{  
+.tech-stack-section-wrapper{ 
   width: 60%;
-  padding:  64px;
+  padding: 80px 64px;
   max-width: 1600px;
   margin: 0 auto;
 }
-
-.tech-stack-section h1 {
+ 
+.tech-stack-section-wrapper-heading  {
   font-size: 44px;
   line-height: 48px;
   font-weight: 700;
   text-align: center;
-  text-decoration: underline;
   margin-bottom: 40px;
 }
+
+.tech-stack-section-wrapper-heading i{ 
+  margin: 0px 10px 0px 0px; 
+  transition: transform 0.5s ease;
+}
+.tech-stack-section-wrapper-heading:hover i{
+  transform: rotateZ(-180deg);
+}
+
 .tech-stack-section img{
   height: 60px;
   width: 60px;
@@ -291,10 +299,25 @@ nav ul  a  {
   cursor: pointer;
 }
 .tech-stack-section img:hover{
-  transform: translateY(-10px);
+  transform: scale(1.2);
 }
-.front-end{
+.front-end,
+.front-end-libraries,
+.back-end{
   justify-content: space-between;  
+  border-bottom: 4px solid #ffffff;
+  transition:  all 0.2s ease;
+}
+.front-end:hover,
+.front-end-libraries:hover,
+.back-end:hover{
+  padding: 0px 20px 10px 20px;
+  margin-bottom: 10px;
+  border-bottom-color: #3c99f0;
+}
+.back-end:hover{  
+  padding: 0px 80px 10px 20px;
+  border-bottom-color: #f81b1b;
 }
 .front-end h2,
 .back-end h2{
@@ -302,17 +325,27 @@ nav ul  a  {
   line-height: 38px;
   font-weight: 600;
 }
-.front-end-libraries{
-  justify-content: space-between;
-  margin: 15px 0px 30px 0px;
+.front-end-libraries{  
+  margin: 25px 0px ;
 }
-.front-end-libraries h3{
+.front-end-libraries-heading{
   font-size: 28px;
   line-height: 32px;
   font-weight: 600;
 }
-.back-end{
+.front-end-libraries-heading i{
+  transform: rotateZ(90deg);
+  transition: all 0.5s ease;
+  margin: 0px 20px 0px 0px;
+}
+.front-end-libraries:hover .front-end-libraries-heading i{
+  transform: rotateZ(0deg);
+  transform: rotateY(180deg);
+}
+.back-end-tech-logos{
+  display: flex;
   justify-content: space-between;
+  /* width: 30%; */
 }
 
 .projects-section {
@@ -433,12 +466,12 @@ nav ul  a  {
 
 #form-details { 
   width: 100%;
-  padding: 100px 64px;
+  padding: 80px 64px;
 }
 .form-wrapper{
   width: 100%;
   max-width: 1600px;
-  margin: 30px auto;
+  margin: 0px auto;
 }
 
 #form-details form {
@@ -447,15 +480,15 @@ nav ul  a  {
 }
 
 #form-details form h2 {
-  font-size: 38px;
-  line-height: 34px;
+  font-size: 50px;
+  line-height: 54px;
   font-weight: 600;
 }
 
 #form-details form h3 {
-  font-size: 30px;
-  line-height: 34px;
-  padding: 20px 0;
+  font-size: 28px;
+  line-height: 32px;
+  margin: 20px 0;
 }
 
 #form-details form input,
@@ -576,7 +609,7 @@ footer {
   font-weight: 700;
   font-size: 1.2rem;
   text-align: center;
-  padding-top: 1rem;
+  padding: 20px 0px ;
   margin-bottom: auto;
   margin-left: auto;
   border-top: 1px solid #222222;
@@ -657,6 +690,15 @@ footer {
   #form-details form {
     width: 100%;
   }
+  #form-details form h2{
+    margin: 0px auto 20px auto;
+  }
+  #form-details form h3{
+    margin: 0px auto 30px auto;
+  }
+  .form-btn{
+    margin: 0px auto;
+  }
 
 }
 
@@ -664,7 +706,7 @@ footer {
   .hero-section{
     padding: 40px 20px;
   }
-  .tech-stack-section-wrapper h1{
+  .tech-stack-section-wrapper-heading {
     font-size: 34px;
     line-height: 38px;
     text-decoration: none;
@@ -685,15 +727,19 @@ footer {
   .front-end-libraries{
     font-size: 24px;
   }
+  .back-end:hover{  
+  padding: 0px 20px 10px 20px;
+  
+}
   .projects-section h1{
     font-size: 45px;
     line-height: 50px;
   }
-  .form-btn{
-    margin: 0px auto;
-  }
+  #form-details{
+    padding: 60px 20px;
+  }  
   footer{
-    padding: 40px 20px;
+    padding: 40px 20px 0px 20px;
   }
   .copy-right{
     font-size: 20px;
@@ -720,18 +766,16 @@ footer {
     padding: 40px 20px;
   }
   .tech-stack-section-wrapper img{
-    width: 40px;
-    height: 40px;
-    margin: 0px;
+    margin: 5px;
   }
   .front-end h2,
   .back-end h2{
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .front-end-libraries-heading{
     font-size: 24px;
     line-height: 28px;
-  }
-  .front-end-libraries h3{
-    font-size: 18px;
-    line-height: 22px;
   }
   .projects-section{
     padding: 40px 20px;
@@ -754,6 +798,67 @@ footer {
   }
   #element {
     font-size: 1.3rem;
+  }
+  .tech-stack-section-wrapper{
+  padding: 60px 20px;
+  } 
+  .tech-stack-section-wrapper-heading{
+  font-size: 28px;
+  line-height: 32px;
+  }
+  .front-end h2,
+  .back-end h2{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .front-end-libraries-heading{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .logo{
+    font-size: 50px;
+    line-height: 54px;
+  }
+  .copy-right{
+    font-size: 18px;
+    line-height: 22px;
+  }
+ 
+}
+@media (max-width:320px) {
+  .tech-stack-section-wrapper-heading{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .front-end h2,
+  .back-end h2{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .front-end-libraries-heading{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .tech-stack-section-wrapper img{
+    height: 40px;
+    width: 40px;
+    margin: 0px 3px;
+  }
+  .projects-section h1{
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  #form-details form h2{
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  #form-details form h3{
+    font-size: 24px;
+    line-height: 28px;
   }
   
 }
