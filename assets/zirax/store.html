@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zirax Kicks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body class="font-poppins overflow-x-hidden min-w-full">
+    <header class="min-w-full">
+      <nav class="border-b-2 flex justify-between items-center relative z-10">
+        <div>
+          <img class="p-2 w-36 cursor-pointer" src="./img/Logos/logo.webp" alt="" />
+        </div>
+        <ul class="flex items-center">
+          <li
+            class="m-2 p-2 text-lg hover:text-blue-500 hover:scale-110 transition ease-in-out delay-150"
+          >
+            <a href="#"
+              ><i class="fa-solid fa-user"></i
+              ><span class="ml-1">Log In</span></a
+            >
+          </li>
+          <li
+            class="m-2 p-2 text-lg hover:text-blue-700 hover:scale-110 transition ease-in-out delay-150"
+          >
+            <a href="#">Sign Up</a>
+          </li>
+          <li
+            class="m-2 p-2 text-4xl hover:text-blue-700 hover:scale-110 transition ease-in-out delay-150"
+          >
+            <button onclick="showCart()" class="relative cursor-pointer">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <p id="itemsInCart"
+                class="text-base absolute top-0 -right-3 text-white bg-blue-700 rounded-full px-2"
+              >
+                0
+              </p>
+            </button>
+          </li>
+        </ul>
+        <!-- Cart  -->
+        <div
+          id="cartNav"
+          class="bg-blue-700 fixed top-0 -right-[400px] w-[400px] min-h-96: h-full cursor-default transition-all duration-300 delay-150 z-10 overflow-auto"
+        >
+          <div class="text-center text-white m-2 relative border-b-2">
+            <div class="font-extrabold text-3xl">Cart</div>
+            <button
+              onclick="hideCart()"
+              class="absolute top-0 right-0 text-3xl hover:scale-110 transition duration-150 delay-150"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div id="cartItems" class="mb-[50%]">
+           
+
+          </div>
+          
+          <div
+            class="flex flex-col text-black text-3xl font-bold fixed mb-1 bg-white bottom-0 rounded-xl p-4 border-l-4 border-blue-700 "
+          >
+            <span>Total: </span>
+            <span id="cartTotal"></span>
+            <button
+              class=" border-2 m-2 p-1 rounded-xl border-black hover:bg-black hover:text-white hover:scale-110 transition-all duration-500 ease-[cubic-bezier(.05,.86,.75,.13)]"
+            >
+              Check Out
+            </button>
+          </div>
+        </div>
+      </nav>
+      <nav class="border-b-2">
+        <ul class="flex items-center">
+          <li
+            class="m-2 p-2 text-xl hover:text-blue-700 hover:scale-110 transition ease-in-out delay-150"
+          >
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="m-2 p-2 text-xl text-blue-700 scale-110 transition ease-in-out delay-150"
+          >
+            <a href="store.html">Store</a>
+          </li>
+          <li
+            class="m-2 p-2 text-xl hover:text-blue-700 hover:scale-110 transition ease-in-out delay-150"
+          >
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="my-12 mx-4 min-w-full">
+      <div
+        class="text-6xl text-blue-700 font-extrabold text-center m-8 cursor-default"
+      >
+        <span>All Products</span>
+      </div>
+      <div id="root" class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 text-white">
+
+      </div>
+    </main>
+    <footer
+    class="bg-blue-500 mt-4 text-white text-center p-6 grid grid-cols-4 min-w-full"
+  >
+    <div class="cursor-default">
+      <span class="font-extrabold text-3xl mb-2">About Us</span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+        asperiores consequatur ab voluptate, odio et, possimus, nihil
+        voluptates illum corrupti cumque dignissimos eum hic? Doloremque
+        aliquid iste sed.
+      </p>
+    </div>
+    <div class="grid mx-4">
+      <ul>
+        <li>
+          <span class="text-2xl font-bold cursor-default">ZIRAX</span>
+        </li>
+        <li class="hover:scale-110 transition duration-150 delay-150">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="scale-110 underline transition duration-150 delay-150">
+          <a href="store.html">Store</a>
+        </li>
+        <li class="hover:scale-110 transition duration-150 delay-150">
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-span-2 cursor-default">
+      <span class="font-bold text-2xl row-span-1">Payment Gateways</span>
+      <div class="flex justify-center items-center border-l-2 border-white">
+        <div class="w-16">
+          <img src="./img/Logos/visa.webp" alt="visa logo" />
+        </div>
+        <div class="w-16">
+          <img src="./img/Logos/paypal.webp" alt="paypal logo" />
+        </div>
+        <div class="w-16">
+          <img src="./img/Logos/mastercard.webp" alt="master card logo" />
+        </div>
+      </div>
+    </div>
+
+    <div class="font-bold col-span-4 border-t-2 pt-4 cursor-default">
+      <p>&copy; 2024 Zirax | All Rights Reserved</p>
+    </div>
+  </footer>
+    <script src="product.js"></script>
+    <script src="script.js"></script>
+    <script>
+       let productDisplay = products.map((item) => {
+  var { id, image, rank, brand, title, price } = item;
+
+  document.getElementById("root").innerHTML += `
+      <div class="rounded-3xl p-4 bg-blue-500 cursor-default transition-all duration-300 delay-150 shadow-2xl hover:shadow-none">
+        <div class=" overflow-hidden rounded-3xl">
+          <img style="height:300px; width:100%;" src="${image}" alt="" />
+        </div>
+        <br><br>
+        <div class="grid grid-cols-1 relative z-0">
+          <span class="font-bold">${brand}</span>
+          <span class="font-semibold">${title}</span>
+          <div class="text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="font-bold">$${price}</span>
+          <button onclick='addToCart(${id})' class="absolute right-0 text-2xl bottom-0 border-2 text-white rounded-full border-white px-3 py-2 hover:text-blue-500 hover:bg-white transition-all duration-200 cursor-pointer">
+            <i class="fa-solid fa-cart-plus"></i>
+          </button>
+        </div>
+      </div>`;
+
+
+});
+
+
+
+      
+    </script>
+  </body>
+</html>

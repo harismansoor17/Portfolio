@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zirax Kicks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/webp" href="img/Logos/favicon.webp" />
+    <style>
+      .carousel {
+        display: flex;
+        transition: transform 1s ease;
+      }
+      .carousel-item {
+        min-width: 100%;
+      }
+    </style>
+  </head>
+  <body class="font-customFont min-w-full">
+    <!-- #8179b5 #fc9d17 -->
+    <header class="min-w-full">
+      <nav class="border-b-2 flex justify-between items-center relative z-10">
+        <div class="">
+          <img class="p-2 w-36 cursor-pointer" src="./img/Logos/logo.webp" alt="Zirax LOGO" />
+        </div>
+        <ul class="flex items-center">
+          <li
+            class="m-2 p-2 text-lg hover:text-blue-500 hover:scale-110 transition ease-in-out delay-150"
+          >
+            <a href="#"
+              ><i class="fa-solid fa-user"></i
+              ><span class="ml-1">Log In</span></a
+            >
+          </li>
+          <li
+            class="m-2 p-2 text-lg hover:text-blue-700 hover:scale-110 transition ease-in-out delay-150"
+          >
+            <a href="#">Sign Up</a>
+          </li>
+          <li
+            class="m-2 p-2 text-4xl hover:text-blue-700 hover:scale-110 transition ease-in-out delay-150"
+          >
+            <button onclick="showCart()" class="relative cursor-pointer">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <p id="itemsInCart"
+                class="text-base absolute top-0 -right-3 text-white bg-blue-700 rounded-full px-2"
+              >
+                0
+              </p>
+            </button>
+          </li>
+        </ul>
+        <!-- Cart  -->
+        <div
+          id="cartNav"
+          class="bg-blue-700 fixed top-0 -right-[400px] w-[400px] min-h-96: h-full cursor-default transition-all duration-300 delay-150 z-10 overflow-auto"
+        >
+          <div class="text-center text-white m-2 relative border-b-2">
+            <div class="font-extrabold text-3xl">Cart</div>
+            <button
+              onclick="hideCart()"
+              class="absolute top-0 right-0 text-3xl hover:scale-110 transition duration-150 delay-150"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div id="cartItems" class="mb-[50%]">
+           
+
+          </div>
+          
+          <div
+            class="flex flex-col text-black text-3xl font-bold fixed mb-1 bg-white bottom-0 rounded-xl p-4 border-l-4 border-blue-700 "
+          >
+            <span>Total: </span>
+            <span id="cartTotal">$0.00</span>
+            <button
+              class=" border-2 m-2 p-1 rounded-xl border-black hover:bg-black hover:text-white hover:scale-110 transition-all duration-500 ease-[cubic-bezier(.05,.86,.75,.13)]"
+            >
+              Check Out
+            </button>
+          </div>
+        </div>
+      </nav>
+      <nav class="border-b-2">
+        <ul class="flex items-center">
+          <li
+            class="m-2 p-2 text-xl scale-110 text-blue-700 transition ease-in-out delay-150"
+          >
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="m-2 p-2 text-xl hover:text-blue-700 hover:scale-110 transition ease-in-out delay-150"
+          >
+            <a href="store.html">Store</a>
+          </li>
+          <li
+            class="m-2 p-2 text-xl hover:text-blue-700 hover:scale-110 transition ease-in-out delay-150"
+          >
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="min-w-full">
+      <section class="relative w-full h-[750px] overflow-hidden">
+        <div class="absolute inset-0 m-4 -z-10">
+          <p class="text-red-700 text-3xl font-bold m-0">Zirax</p>
+          <span class="text-blue-700 text-9xl font-bold">
+            Hit The Ground Running...
+          </span>
+        </div>
+        <div id="carousel" class="carousel min-h-full">
+          <div class="carousel-item h-screen overflow-visible">
+            <img
+              src="./img/Carousal/1.webp"
+              class="mx-auto w-[800px] h-[600px] object-contain my-24"
+              alt="Carousal Image 1"
+            />
+          </div>
+          <div class="carousel-item h-screen overflow-visible">
+            <img
+              src="./img/Carousal/2.webp"
+              class="mx-auto w-[850px] h-[500px] object-contain my-24"
+              alt="Carousal Image 2"
+            />
+          </div>
+          <div class="carousel-item h-screen overflow-visible">
+            <img
+              src="./img/Carousal/3.webp"
+              class="mx-auto w-[800px] h-[500px] object-contain my-24"
+              alt="Carousal Image 3"
+            />
+          </div>
+          <div class="carousel-item h-screen overflow-visible">
+            <img
+              src="./img/Carousal/4.webp"
+              class="mx-auto w-[800px] h-[500px] object-contain my-24"
+              alt="Carousal Image 4"
+            />
+          </div>
+          <div class="carousel-item h-screen overflow-visible">
+            <img
+              src="./img/Carousal/5.webp"
+              class="mx-auto w-[800px] h-[500px] object-contain my-24"
+              alt="Carousal Image 5"
+            />
+          </div>
+          <div class="carousel-item h-screen overflow-visible">
+            <img
+              src="./img/Carousal/6.webp"
+              class="mx-auto w-[800px] h-[500px] object-contain my-24"
+              alt="Carousal Image 6"
+            />
+          </div>
+          <div class="carousel-item h-screen overflow-visible">
+            <img
+              src="./img/Carousal/7.webp"
+              class="mx-auto w-[900px] h-[700px] object-contain my-24"
+              alt="Carousal Image 7"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="flex justify-evenly flex-wrap sm:flex-col items-center ">
+        <div
+          class="p-8 flex justify-center items-center flex-col transition duration-200 delay-150 shadow-xl hover:shadow-none cursor-default"
+        >
+          <div
+            class="text-blue-700 rounded-full border-4 px-3 py-2 border-blue-700"
+          >
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <span class="font-extrabold text-2xl">Free shipping</span
+          ><span class="font-semibold">On purchase over $50</span>
+        </div>
+        <div
+          class="p-8 flex justify-center items-center flex-col transition duration-200 delay-150 shadow-xl hover:shadow-none cursor-default"
+        >
+          <div
+            class="text-blue-700 rounded-full border-4 px-3 py-2 border-blue-700"
+          >
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <span class="font-extrabold text-2xl">Money Back</span
+          ><span class="font-semibold">30 Days Back Guaranty</span>
+        </div>
+        <div
+          class="p-8 flex justify-center items-center flex-col transition duration-200 delay-150 shadow-xl hover:shadow-none cursor-default"
+        >
+          <div
+            class="text-blue-700 rounded-full border-4 px-3 py-2 border-blue-700"
+          >
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <span class="font-extrabold text-2xl">Online Support</span
+          ><span class="font-semibold">24/7 Technical Support</span>
+        </div>
+        <div
+          class="p-8 flex justify-center items-center flex-col transition duration-200 delay-150 shadow-xl hover:shadow-none cursor-default"
+        >
+          <div
+            class="text-blue-700 rounded-full border-4 px-3 py-2 border-blue-700"
+          >
+            <i class="fa-solid fa-credit-card"></i>
+          </div>
+          <span class="font-extrabold text-2xl">Secure Payment</span
+          ><span class="font-semibold">All Cards Accepted</span>
+        </div>
+      </section>
+      <section>
+        <div
+          class="text-6xl text-blue-700 font-extrabold text-center m-8 cursor-default"
+        >
+          <span>Featured Products</span>
+        </div>
+        <div id="featured" class="flex justify-evenly flex-wrap gap-2 sm:flex-col items-center text-white"></div>
+      </section>
+      <section class="grid grid-cols-2 grid-rows-3 gap-4 m-36">
+        <div
+          class="border-2 rounded-3xl p-20 cursor-default col-span-2 row-span-1"
+          style="
+            background-image: url(./img/BGimgs/1.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="grid grid-cols-1 text-white">
+            <span class="font-bold text-2xl">Sports Shoes</span>
+            <span class="font-semibold text-3xl"
+              >Step Into Performance</span
+            >
+          </div>
+          <button
+            class="bg-blue-700 m-1 p-4 rounded-3xl font-semibold text-white hover:bg-white hover:text-blue-700 transition-all duration-300 delay-150"
+          >
+            Shop by Category
+          </button>
+        </div>
+        <div
+          class="border-2 rounded-3xl p-20 cursor-default col-span-1 row-span-1 text-center"
+          style="
+            background-image: url(./img/BGimgs/2.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="grid grid-cols-1 text-white">
+            <span class="font-bold text-2xl ">Splash resistant</span>
+            <span class="font-semibold text-3xl "
+              >Best Kicks for Kids</span
+            >
+          </div>
+          <button
+            class="bg-blue-700 p-4 m-1 rounded-3xl font-semibold text-white hover:bg-white hover:text-blue-700 transition-all duration-300 delay-150"
+          >
+            Shop by Category
+          </button>
+        </div>
+        <div
+          class="border-2 rounded-3xl p-20 cursor-default col-span-1 row-span-1 text-center"
+          style="
+            background-image: url(./img/BGimgs/3.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="grid grid-cols-1 text-white">
+            <span class="font-bold text-2xl">Running Shoes</span>
+            <span class="font-semibold text-3xl"
+              >Run Faster, Run Freer</span
+            >
+          </div>
+          <button
+            class="bg-blue-700 p-4 m-1 rounded-3xl font-semibold text-white hover:bg-white hover:text-blue-700 transition-all duration-300 delay-150"
+          >
+            Shop by Category
+          </button>
+        </div>
+        <div
+          class="border-2 rounded-3xl p-20 cursor-default col-span-2"
+          style="
+            background-image: url(./img/BGimgs/5.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="grid grid-cols-1 text-white">
+            <span class="font-bold text-2xl">Joggers</span>
+            <span class="font-semibold text-3xl "
+              >Jog Your Way into The Future</span
+            >
+          </div>
+          <button
+            class="bg-blue-700 p-4 m-1 rounded-3xl font-semibold text-white hover:bg-white hover:text-blue-700 transition-all duration-300 delay-150"
+          >
+            Shop by Category
+          </button>
+        </div>
+      </section>
+      <section class="my-12 ">
+        <div
+          class="text-6xl text-blue-700 font-extrabold text-center m-8 cursor-default"
+        >
+          <span>New Arivals</span>
+        </div>
+        <div id="newArrivals" class="grid grid-cols-4 gap-4 text-white"></div>
+      </section>
+      <section class="grid grid-cols-3 gap-4 mx-4">
+        <div
+          class="flex justify-center items-center flex-col text-center p-4 bg-blue-500 text-white rounded-2xl cursor-default"
+        >
+          <div class="w-16 overflow-hidden border-2 rounded-full">
+            <img class="object-contain" src="./img/Brands/Adidas/Ultraboost 5X.webp" alt="product img" />
+          </div>
+          <br />
+
+          <span class="font-medium"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            voluptates dicta repudiandae distinctio delectus laborum consequatur
+            velit ad inventore eveniet nemo odio, officiis ipsam reiciendis
+            saepe eligendi error, sit cum?</span
+          >
+          <br />
+          <br />
+          <div class="w-16 overflow-hidden border-2 rounded-full">
+            <img class="object-contain" src="./img/Logos/profile 1.webp" alt="profile img" />
+          </div>
+          <span class="font-semibold">Haris Mansoor</span>
+          <span>Front-End Developer</span>
+          <div class="text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center flex-col text-center p-4 bg-blue-500 text-white rounded-2xl cursor-default"
+        >
+          <div class="w-16 overflow-hidden border-2   rounded-full">
+            <img class="object-contain" src="./img/Brands/Nike/Luka 3 Speedway.webp" alt="product img" />
+          </div>
+          <br />
+
+          <span class="font-medium"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            voluptates dicta repudiandae distinctio delectus laborum consequatur
+            velit ad inventore eveniet nemo odio, officiis ipsam reiciendis
+            saepe eligendi error, sit cum?</span
+          >
+          <br />
+          <br />
+          <div class="w-16 overflow-hidden border-2 rounded-full">
+            <img class="object-contain" src="./img/Logos/profile 2.webp" alt="profile img" />
+          </div>
+          <span class="font-semibold">Imran Khan</span>
+          <span>Ex Prime Minister of Pakistan</span>
+          <div class="text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center flex-col text-center p-4 bg-blue-500 text-white rounded-2xl cursor-default"
+        >
+          <div class="w-16 overflow-hidden border-2 rounded-full">
+            <img class="object-contain" src="./img/Brands/Adidas/Lite Racer Adapt 6.0.webp" alt="product img" />
+          </div>
+          <br />
+
+          <p class="font-medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            voluptates dicta repudiandae distinctio delectus laborum consequatur
+            velit ad inventore eveniet nemo odio, officiis ipsam reiciendis
+            saepe eligendi error, sit cum?
+          </p>
+          <br />
+          <br />
+          <div class="w-16 overflow-hidden border-2 rounded-full">
+            <img class="object-contain" src="./img/Logos/profile 3.webp" alt="profile img" />
+          </div>
+          <span class="font-semibold">Mansoor Ahmed</span>
+          <span>Army Officer</span>
+          <div class="text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-blue-500 mt-4 text-white text-center p-6 grid grid-cols-4 min-w-full"
+    >
+      <div class="cursor-default mb-2">
+        <span class="font-extrabold text-3xl">About Us</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+          asperiores consequatur ab voluptate, odio et, possimus, nihil
+          voluptates illum corrupti cumque dignissimos eum hic? Doloremque
+          aliquid iste sed.
+        </p>
+      </div>
+      <div class="grid mx-4">
+        <ul>
+          <li>
+            <span class="text-2xl font-bold cursor-default">ZIRAX</span>
+          </li>
+          <li class="scale-110 underline transition duration-150 delay-150">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:scale-110 transition duration-150 delay-150">
+            <a href="store.html">Store</a>
+          </li>
+          <li class="hover:scale-110 transition duration-150 delay-150">
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-2 cursor-default">
+        <span class="font-bold text-2xl row-span-1">Payment Gateways</span>
+        <div class="flex justify-center items-center border-l-2 border-white">
+          <div class="w-16">
+            <img src="./img/Logos/visa.webp" alt="visa logo" />
+          </div>
+          <div class="w-16">
+            <img src="./img/Logos/paypal.webp" alt="paypal logo" />
+          </div>
+          <div class="w-16">
+            <img src="./img/Logos/mastercard.webp" alt="master card logo" />
+          </div>
+        </div>
+      </div>
+
+      <div class="font-bold col-span-4 border-t-2 pt-4 cursor-default">
+        <p>&copy; 2024 Zirax | All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="product.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // CAROUSEl
+      const carousel = document.getElementById("carousel");
+      const totalItems = document.querySelectorAll(".carousel-item").length;
+      let index = 0;
+      let forward = true;
+
+      function showNextImage() {
+        if (forward) {
+          index++;
+          if (index === totalItems - 1) {
+            forward = false;
+          }
+        } else {
+          index--;
+          if (index === 0) {
+            forward = true;
+          }
+        }
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      setInterval(showNextImage, 3000); // Change image every 3 seconds
+      //
+      // Product
+
+      let productDisplay = products.map((item) => {
+  var { id, image, rank, brand, title, price } = item;
+
+  // Handle 'feature' rank
+  if (rank === "feature") {
+    document.getElementById("featured").innerHTML += `
+      <div class="m-2 rounded-3xl p-4 bg-blue-500 cursor-default transition-all duration-300 delay-150 shadow-2xl hover:shadow-none">
+       <div class="overflow-hidden rounded-3xl">
+          <img style="height:300px; width:100%;" src="${image}" alt="" />
+        </div>
+        <br><br>
+        <div class="grid grid-cols-1 relative z-0">
+          <span class="font-bold">${brand}</span>
+          <span class="font-semibold">${title}</span>
+          <div class="text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="font-bold">$${price}</span>
+          <button onclick="addToCart(${id})" class="absolute right-0 text-2xl bottom-0 border-2 text-white rounded-full border-white px-3 py-2 hover:text-blue-500 hover:bg-white transition-all duration-200 cursor-pointer">
+            <i class="fa-solid fa-cart-plus"></i>
+          </button>
+        </div>
+      </div>`;
+  }
+
+  // Handle 'new' rank
+  else if (rank === "new") {
+    document.getElementById("newArrivals").innerHTML += `
+      <div class="rounded-3xl p-4 bg-blue-500 cursor-default transition-all duration-300 delay-150 shadow-2xl hover:shadow-none">
+        <div class="overflow-hidden rounded-3xl">
+          <img style="height:300px; width:100%;" src="${image}" alt="" />
+        </div>
+        <br><br>
+        <div class="grid grid-cols-1 relative z-0">
+          <span class="font-bold">${brand}</span>
+          <span class="font-semibold">${title}</span>
+          <div class="text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="font-bold">$${price}</span>
+          <button onclick="addToCart(${id})" class="absolute right-0 text-2xl bottom-0 border-2 text-white rounded-full border-white px-3 py-2 hover:text-blue-500 hover:bg-white transition-all duration-200 cursor-pointer">
+            <i class="fa-solid fa-cart-plus"></i>
+          </button>
+        </div>
+      </div>`;
+  }
+});
+
+      //
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

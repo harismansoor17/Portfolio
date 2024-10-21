@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter 9000</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #ffffff;
+        min-height: 100vh;
+        color: #ffffff;
+      }
+      nav {
+        font-weight: 600;
+        display: flex;
+        background-color: rgb(168, 85, 247);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+      }
+      .icon {
+        margin: 0 23px;
+        padding: 12px 0;
+        font-family: "Anta", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-style: normal;
+        cursor: pointer;
+      }
+      .container {
+        min-height: 100vh;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .info_cnvrt {
+        font-family: "Kdam Thmor Pro", sans-serif;
+        padding: 30px;
+        background-color: #222222;
+        border-radius: 30px;
+        text-align: center;
+        font-weight: 800;
+        margin: 50px;
+        width: 80vw;
+        transition: all 1s cubic-bezier(0.17, 1.59, 0.77, -0.33);
+      }
+      .info_cnvrt:hover {
+        color: #222222;
+        background-color: rgb(168, 85, 247);
+        scale: 1.1;
+      }
+      form {
+        margin: 30px;
+        padding: 80px;
+        background-color: rgb(168, 85, 247);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        border-radius: 2rem;
+      }
+      form select,
+      input,
+      button {
+        width: 100%;
+        border: none;
+        outline: none;
+        margin: 0.75rem;
+        border-radius: 8px;
+        padding: 0.6rem;
+        text-align: center;
+      }
+      form input {
+        background-color: #222222;
+        color: #ffffff;
+        font-size: 1.2rem;
+        width: 80%;
+      }
+      .dropdown {
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .dropdown i {
+        overflow-y: hidden;
+        margin: 2rem;
+        margin-top: 3.5rem;
+        font-size: 1.5rem;
+      }
+      .select-container {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #222222;
+        border-radius: 8px;
+        padding: 0.3rem;
+      }
+      .select-container select {
+        width: auto;
+        cursor: pointer;
+        background-color: rgb(168, 85, 247);
+        color: #ffffff;
+      }
+      form button {
+        width: 100%;
+        font-weight: 700;
+        cursor: pointer;
+        background-color: #222222;
+        color: #ffffff;
+      }
+      form button:hover {
+        background-color: #ffffff;
+        color: #222222;
+        scale: 1.1;
+        transition: 3s ease-in-out;
+        transition-duration: 300ms;
+        transition-delay: 150ms;
+      }
+      .select-container img {
+        max-width: 4rem;
+        border-radius: 8px;
+      }
+      .msg {
+        margin: 22px;
+        font-weight: 600;
+        background-color: #222222;
+        border-radius: 2rem;
+        padding: 22px;
+      }
+      .amount p,
+      .dropdown p {
+        font-weight: 600;
+        margin: 4px;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        height: 100%;
+        background-color: rgb(168, 85, 247);
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: 800;
+      }
+      @media (max-width: 639px) {
+        form {
+          flex-wrap: wrap;
+          margin: 15px 10px;
+        }
+        .dropdown {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="icon">Currency Converter 9000</div>
+    </nav>
+    <!-- Warning Container  -->
+    <div class="container">
+      <div class="info_cnvrt">
+        <h1>Currency converter 9000</h1>
+        <p>Warning: IT's over 9000</p>
+      </div>
+
+      <!-- Converter Container  -->
+      <form>
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="100" />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <p>From</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/flat/64.png" />
+              <select name="from"></select>
+            </div>
+          </div>
+          <i class="fa-solid fa-right-left"></i>
+          <div class="to">
+            <p>TO</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/PK/flat/64.png" />
+              <select name="to"></select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">Getting Exchange Rate.....</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+    <div class="footer">
+      <span>COPY RIGHT &copy; all rights reserved by Me 2024</span>
+    </div>
+    <script src="code.js"></script>
+    <script>
+      const dropdowns = document.querySelectorAll(".dropdown select");
+      const btn = document.querySelector("form button");
+      const fromCurr = document.querySelector(".from select");
+      const toCurr = document.querySelector(".to select");
+      const msg = document.querySelector(".msg");
+
+      for (let select of dropdowns) {
+        for (currCode in countryList) {
+          // console.log(code, countryList[currCode] );
+          let newOption = document.createElement("option");
+          newOption.innerText = currCode;
+          newOption.value = currCode;
+          if (select.name === "from" && currCode === "USD") {
+            newOption.selected = "selected";
+          } else if (select.name === "to" && currCode === "PKR") {
+            newOption.selected = "selected";
+          }
+          select.append(newOption);
+        }
+
+        select.addEventListener("change", (evt) => {
+          updateFlag(evt.target);
+        });
+      }
+
+      const updateFlag = (element) => {
+        let currCode = element.value;
+        let countryCode = countryList[currCode];
+        let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
+        let img = element.parentElement.querySelector("img");
+        img.src = newSrc;
+      };
+
+      btn.addEventListener("click", async (evt) => {
+        evt.preventDefault();
+        let amount = document.querySelector(".amount input");
+        let amtVal = amount.value;
+        if (amtVal == "" || amtVal < 1) {
+          amtVal = 1;
+          amount.value = "1";
+        }
+
+        let url = `https://v6.exchangerate-api.com/v6/66c2b7b1c9a0a0ac78e3da02/latest/${fromCurr.value}`;
+        fetch(url)
+          .then((response) => response.json())
+          .then((result) => {
+            let exchangeRate = result.conversion_rates[toCurr.value];
+            let totalExchangeRate = (amtVal * exchangeRate).toFixed(2);
+
+            msg.innerText = `${amtVal} ${fromCurr.value} = ${totalExchangeRate} ${toCurr.value}`;
+          });
+      });
+    </script>
+  </body>
+</html>
